@@ -524,5 +524,89 @@
         "description": "Seeded from the official CISA PDF and directive index."
       }
     ]
+  },
+  {
+    "id": "omb-m-26-15",
+    "slug": "m-26-15-post-quantum-cryptography-migration",
+    "title": "Execution of the Migration to Post-Quantum Cryptography",
+    "identifier": "M-26-15",
+    "issuingAuthority": "OMB",
+    "documentType": "Memorandum",
+    "authorityLevel": "implementation-directive",
+    "publicationDate": "2026-06-24",
+    "effectiveDate": "2026-06-24",
+    "status": "active",
+    "summary": "Directs federal agencies to plan and execute a risk-prioritized migration to NIST-approved post-quantum cryptography, with phased milestones through 2035.",
+    "executiveHighlights": [
+      "Requires a PQC Migration Plan within 120 days of the memorandum.",
+      "Prioritizes high-impact systems, High Value Assets, and long-lived sensitive data.",
+      "Sets phased migration objectives through 2035 and connects PQC implementation to Zero Trust architecture."
+    ],
+    "requirements": [
+      "Execute a prioritized migration of agency cryptographic systems to mitigate quantum risk.",
+      "Submit a PQC Migration Plan to OMB and ONCD within 120 days.",
+      "Integrate PQC readiness into governance, inventories, cloud migrations, software development, hardware refresh, and acquisition planning.",
+      "Support TLS 1.3 or a successor protocol as soon as practicable and no later than January 2, 2030."
+    ],
+    "deadlines": [
+      {
+        "date": "2026-10-22",
+        "label": "Agency PQC Migration Plan due to OMB and ONCD (120 days after publication).",
+        "status": "upcoming"
+      },
+      {
+        "date": "2030-01-02",
+        "label": "Latest date for agency support of TLS 1.3 or a successor version.",
+        "status": "upcoming"
+      },
+      {
+        "date": "2030-12-31",
+        "label": "Objective for mitigating as much quantum risk as feasible and completing prioritized key-establishment migration.",
+        "status": "upcoming"
+      },
+      {
+        "date": null,
+        "label": "Signature migration phase in 2031 and remaining-system migration phase by 2035.",
+        "status": "upcoming"
+      }
+    ],
+    "applicability": "Executive departments and agencies covered by the memorandum; national security systems are excluded.",
+    "affectedOrganizations": ["Federal agencies"],
+    "topics": [
+      "Post-quantum cryptography",
+      "Encryption",
+      "Zero Trust",
+      "Identity and access management",
+      "Cloud security",
+      "Software supply chain"
+    ],
+    "zeroTrust": true,
+    "zeroTrustExcerpts": [
+      {
+        "excerpt": "PQC is a foundational dependency for advancing a durable zero-trust architecture (ZTA) into an optimal state as defined by the CISA ZTA Maturity Model.",
+        "locator": "Appendix A, section 7, page 9"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf"
+    ],
+    "sourceLocators": [
+      "Section 3, Required Agency Actions",
+      "Section 3.D, Plan Submission",
+      "Appendix A, sections 4-7",
+      "Appendix B"
+    ],
+    "relatedDocuments": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "verifiedAt": "2026-07-02",
+    "contentHash": "515af70472d3a4a2107c61a1bc5f8014523d99feab9b2cf92a95e4bcc790da2c",
+    "extractedText": "Agencies must execute a prioritized migration of cryptographic systems used in information systems that they own or operate with the objective of mitigating as much quantum risk as feasible by December 31, 2030. Agencies must develop and submit a PQC Migration Plan to OMB and the Office of the National Cyber Director no later than 120 days from the date of this memorandum. PQC is a foundational dependency for advancing a durable zero-trust architecture (ZTA) into an optimal state as defined by the CISA ZTA Maturity Model.",
+    "changeHistory": [
+      {
+        "date": "2026-07-02",
+        "description": "Seeded and verified against the official OMB PDF after discovery regression analysis."
+      }
+    ]
   }
 ]

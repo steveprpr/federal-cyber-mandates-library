@@ -36,7 +36,7 @@ Run `npm run refresh:hashes` only after intentionally reviewing source changes, 
 
 ## Weekly discovery and human review
 
-The Tuesday workflow checks maintained CISA, NIST, and OMB indexes plus every seeded official source. It downloads HTML/PDF content, hashes bytes before AI, skips unchanged records, extracts changed PDF text, and calls OpenRouter only for changed material. Output must pass the Zod schema, official-domain policy, exact Zero Trust excerpt verification, duplicate detection, and relationship checks. Failure preserves the existing dataset and writes a job summary/artifact.
+The Tuesday workflow parses the maintained OMB memorandum index, CISA directive index, and NIST final-publications index, then compares discovered identifiers and canonical URLs with the collection. It monitors every matching OMB/CISA entry and the ten newest matching NIST publications per run. An index that becomes unreachable or yields no parseable document links fails closed instead of silently reporting success. The workflow downloads new and changed HTML/PDF content, hashes content before AI, skips unchanged records, and calls OpenRouter only for new or changed material. Output must pass the Zod schema, official-domain policy, exact Zero Trust excerpt verification, duplicate detection, and relationship checks. Failure preserves the existing dataset and writes a job summary/artifact.
 
 Changes open as a **draft pull request**, never as a direct production commit. The report includes sources, old/new hashes, proposed JSON, validation results, Zero Trust matches, warnings, and estimated token use. Reviewers use [the checklist](docs/reviewer-checklist.md); merging is the publication decision and triggers Netlify.
 

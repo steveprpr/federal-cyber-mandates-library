@@ -1,6 +1,13 @@
 import { createHash } from "node:crypto";
 import { mkdir, writeFile } from "node:fs/promises";
+import { z } from "zod";
 import mandatesJson from "../src/data/mandates.json" with { type: "json" };
+import {
+  discoverCandidates,
+  findNewCandidates,
+  type DiscoveredCandidate,
+  type DiscoveryAuthority,
+} from "../src/lib/discovery";
 import {
   mandateCollectionSchema,
   mandateSchema,
@@ -23,10 +30,13 @@ const report: string[] = [
 const proposed: Mandate[] = [];
 let estimatedInput = 0,
   estimatedOutput = 0;
-const indexes = [
-  "https://www.cisa.gov/news-events/directives",
-  "https://csrc.nist.gov/publications",
-  "https://www.whitehouse.gov/omb/information-for-agencies/memoranda/",
+const indexes: Array<{ url: string; authority: DiscoveryAuthority }> = [
+  {
+    url: "https://www.whitehouse.gov/omb/information-resources/guidance/memoranda/",
+    authority: "OMB",
+  },
+  { url: "https://www.cisa.gov/news-events/directives", authority: "CISA" },
+  { url: "https://csrc.nist.gov/publications/final-pubs", authority: "NIST" },
 ];
 async function extract(response: Response) {
   const type = response.headers.get("content-type") ?? "";
@@ -53,7 +63,11 @@ async function extract(response: Response) {
     .trim();
   return { text, hash: createHash("sha256").update(text).digest("hex") };
 }
-async function draft(item: Mandate, text: string, hash: string) {
+async function draft(
+  item: Mandate | DiscoveredCandidate,
+  text: string,
+  hash: string,
+) {
   const key = process.env.OPENROUTER_API_KEY,
     model = process.env.OPENROUTER_MODEL ?? "qwen/qwen3.5-27b";
   if (!key)
@@ -63,41 +77,10 @@ async function draft(item: Mandate, text: string, hash: string) {
   const schema = {
     name: "federal_mandate",
     strict: true,
-    schema: {
-      type: "object",
-      additionalProperties: false,
-      required: Object.keys(mandateSchema.shape),
-      properties: Object.fromEntries(
-        Object.keys(mandateSchema.shape).map((k) => [
-          k,
-          {
-            type:
-              k === "zeroTrust"
-                ? "boolean"
-                : k.endsWith("Date")
-                  ? "string"
-                  : [
-                        "executiveHighlights",
-                        "requirements",
-                        "affectedOrganizations",
-                        "topics",
-                        "sourceUrls",
-                        "sourceLocators",
-                        "relatedDocuments",
-                        "supersedes",
-                        "supersededBy",
-                        "zeroTrustExcerpts",
-                        "deadlines",
-                        "changeHistory",
-                      ].includes(k)
-                    ? "array"
-                    : "string",
-          },
-        ]),
-      ),
-    },
+    schema: z.toJSONSchema(mandateSchema, { target: "draft-2020-12" }),
   };
-  const prompt = `Extract a draft update for this PUBLIC federal document. Preserve identifiers and URLs. Do not infer Zero Trust: set it true only for an explicit textual match and quote exact excerpts with locators. Existing record:\n${JSON.stringify(item)}\nSource text:\n${text.slice(0, 700000)}`;
+  const isNew = "url" in item;
+  const prompt = `Extract a ${isNew ? "new draft record" : "draft update"} for this PUBLIC federal document. Preserve identifiers and URLs. Classify authority without overstating guidance as binding. Do not infer Zero Trust: set it true only for an explicit textual match and quote exact excerpts with locators. ${isNew ? "Discovered candidate" : "Existing record"}:\n${JSON.stringify(item)}\nSource text:\n${text.slice(0, 700000)}`;
   estimatedInput += Math.ceil(prompt.length / 4);
   const response = await fetch(
     "https://openrouter.ai/api/v1/chat/completions",
@@ -139,6 +122,13 @@ async function draft(item: Mandate, text: string, hash: string) {
   estimatedOutput += payload.usage?.completion_tokens ?? 0;
   const parsed = mandateSchema.parse({
     ...JSON.parse(payload.choices[0]!.message.content),
+    ...(isNew
+      ? {
+          identifier: item.identifier,
+          issuingAuthority: item.issuingAuthority,
+          sourceUrls: [item.url],
+        }
+      : {}),
     contentHash: hash,
     verifiedAt: new Date().toISOString().slice(0, 10),
     extractedText: text,
@@ -148,14 +138,47 @@ async function draft(item: Mandate, text: string, hash: string) {
   return parsed;
 }
 try {
+  const discovered: DiscoveredCandidate[] = [];
   for (const index of indexes) {
-    const res = await fetch(index, {
+    const res = await fetch(index.url, {
       headers: { "user-agent": "FederalCyberMandatesLibrary/1.0 updater" },
     });
+    if (!res.ok)
+      throw new Error(
+        `Discovery index ${index.url} returned HTTP ${res.status}.`,
+      );
+    const candidates = discoverCandidates(
+      await res.text(),
+      index.url,
+      index.authority,
+    );
+    const monitoredCandidates =
+      index.authority === "NIST" ? candidates.slice(0, 10) : candidates;
+    discovered.push(...monitoredCandidates);
     report.push(
-      `- Discovery index ${index}: ${res.ok ? "reachable" : `HTTP ${res.status}`}`,
+      `- Discovery index ${index.url}: parsed ${candidates.length} cybersecurity candidates; monitoring ${monitoredCandidates.length} newest matches`,
     );
   }
+  const uniqueCandidates = [
+    ...new Map(
+      discovered.map((candidate) => [
+        `${candidate.identifier}|${candidate.url}`,
+        candidate,
+      ]),
+    ).values(),
+  ];
+  const newCandidates = findNewCandidates(uniqueCandidates, current);
+  report.push(
+    "",
+    `## Newly discovered documents (${newCandidates.length})`,
+    "",
+    ...(newCandidates.length
+      ? newCandidates.map(
+          (candidate) =>
+            `- **${candidate.identifier}** ${candidate.title} — ${candidate.url}`,
+        )
+      : ["No new cybersecurity documents were found."]),
+  );
   for (const item of current) {
     const url = item.sourceUrls[0]!;
     if (!isOfficialSource(url)) throw new Error(`Disallowed source ${url}`);
@@ -173,6 +196,17 @@ try {
       `\n## Changed: ${item.identifier}\n\n- Source: ${url}\n- Previous hash: \`${item.contentHash}\`\n- Proposed hash: \`${hash}\``,
     );
     proposed.push(await draft(item, text, hash));
+  }
+  for (const candidate of newCandidates) {
+    if (!isOfficialSource(candidate.url))
+      throw new Error(`Discovered disallowed source ${candidate.url}`);
+    const response = await fetch(candidate.url, {
+      headers: { "user-agent": "FederalCyberMandatesLibrary/1.0 updater" },
+    });
+    if (!response.ok)
+      throw new Error(`${candidate.identifier}: HTTP ${response.status}`);
+    const { text, hash } = await extract(response);
+    proposed.push(await draft(candidate, text, hash));
   }
   const integrity = [
     ...findDuplicates(proposed),
