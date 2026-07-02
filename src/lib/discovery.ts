@@ -122,3 +122,10 @@ export function findNewCandidates(
       !urls.has(new URL(candidate.url).href),
   );
 }
+
+export function selectCandidateBatch(
+  candidates: DiscoveredCandidate[],
+  maximum: number,
+): DiscoveredCandidate[] {
+  return candidates.slice(0, Math.max(0, maximum));
+}

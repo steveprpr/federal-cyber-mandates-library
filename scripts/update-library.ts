@@ -5,6 +5,7 @@ import mandatesJson from "../src/data/mandates.json" with { type: "json" };
 import {
   discoverCandidates,
   findNewCandidates,
+  selectCandidateBatch,
   type DiscoveredCandidate,
   type DiscoveryAuthority,
 } from "../src/lib/discovery";
@@ -80,12 +81,13 @@ async function draft(
     schema: z.toJSONSchema(mandateSchema, { target: "draft-2020-12" }),
   };
   const isNew = "url" in item;
-  const prompt = `Extract a ${isNew ? "new draft record" : "draft update"} for this PUBLIC federal document. Preserve identifiers and URLs. Classify authority without overstating guidance as binding. Do not infer Zero Trust: set it true only for an explicit textual match and quote exact excerpts with locators. ${isNew ? "Discovered candidate" : "Existing record"}:\n${JSON.stringify(item)}\nSource text:\n${text.slice(0, 700000)}`;
+  const prompt = `Extract a ${isNew ? "new draft record" : "draft update"} for this PUBLIC federal document. Preserve identifiers and URLs. Classify authority without overstating guidance as binding. Do not infer Zero Trust: set it true only for an explicit textual match and quote exact excerpts with locators. ${isNew ? "Discovered candidate" : "Existing record"}:\n${JSON.stringify(item)}\nSource text:\n${text.slice(0, 160000)}`;
   estimatedInput += Math.ceil(prompt.length / 4);
   const response = await fetch(
     "https://openrouter.ai/api/v1/chat/completions",
     {
       method: "POST",
+      signal: AbortSignal.timeout(180_000),
       headers: {
         Authorization: `Bearer ${key}`,
         "Content-Type": "application/json",
@@ -103,6 +105,8 @@ async function draft(
         ],
         temperature: 0,
         seed: 42,
+        max_tokens: 8_000,
+        reasoning: { enabled: false },
         response_format: { type: "json_schema", json_schema: schema },
         provider: {
           require_parameters: true,
@@ -168,6 +172,7 @@ try {
     ).values(),
   ];
   const newCandidates = findNewCandidates(uniqueCandidates, current);
+  const candidateBatch = selectCandidateBatch(newCandidates, 5);
   report.push(
     "",
     `## Newly discovered documents (${newCandidates.length})`,
@@ -178,6 +183,8 @@ try {
             `- **${candidate.identifier}** ${candidate.title} — ${candidate.url}`,
         )
       : ["No new cybersecurity documents were found."]),
+    "",
+    `This run will draft ${candidateBatch.length} candidate(s); remaining candidates stay visible in this report for a later review batch.`,
   );
   for (const item of current) {
     const url = item.sourceUrls[0]!;
@@ -197,7 +204,7 @@ try {
     );
     proposed.push(await draft(item, text, hash));
   }
-  for (const candidate of newCandidates) {
+  for (const candidate of candidateBatch) {
     if (!isOfficialSource(candidate.url))
       throw new Error(`Discovered disallowed source ${candidate.url}`);
     const response = await fetch(candidate.url, {

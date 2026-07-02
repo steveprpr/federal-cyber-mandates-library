@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { discoverCandidates, findNewCandidates } from "./discovery";
+import {
+  discoverCandidates,
+  findNewCandidates,
+  selectCandidateBatch,
+} from "./discovery";
 
 const ombIndex = `
   <a href="/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf">
@@ -74,5 +78,18 @@ describe("official index discovery", () => {
         title: "Guidelines for API Protection for Cloud-Native Systems",
       }),
     ]);
+  });
+
+  it("bounds each AI review batch without hiding discovered candidates", () => {
+    const candidates = Array.from({ length: 8 }, (_, index) => ({
+      identifier: `M-26-${index + 20}`,
+      title: `Cybersecurity directive ${index}`,
+      url: `https://example.gov/M-26-${index + 20}.pdf`,
+      issuingAuthority: "OMB" as const,
+    }));
+    expect(
+      selectCandidateBatch(candidates, 5).map((item) => item.identifier),
+    ).toEqual(["M-26-20", "M-26-21", "M-26-22", "M-26-23", "M-26-24"]);
+    expect(candidates).toHaveLength(8);
   });
 });
