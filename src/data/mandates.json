@@ -7,8 +7,8 @@
     "issuingAuthority": "OMB",
     "documentType": "Memorandum",
     "authorityLevel": "implementation-directive",
-    "publicationDate": "2026-05-21",
-    "effectiveDate": "2026-05-21",
+    "publicationDate": "2026-05-22",
+    "effectiveDate": "2026-05-22",
     "status": "active",
     "summary": "Replaces M-21-31 with an adaptive federal logging and network visibility framework centered on continuous event monitoring and investigation, response, and forensics.",
     "executiveHighlights": [
@@ -17,24 +17,46 @@
     ],
     "requirements": [
       "Prioritize logs and infrastructure supporting continuous event monitoring.",
-      "Maintain logging capabilities supporting threat hunting, investigation, response, and forensics."
+      "Maintain logging capabilities supporting threat hunting, investigation, response, and forensics.",
+      "Retain logs so they are actively searchable for at least six months and retrievable for one year."
     ],
-    "deadlines": [],
+    "deadlines": [
+      {
+        "date": null,
+        "label": "CISA must publish the Logging Reference Architecture within 90 days of the memorandum.",
+        "status": "upcoming"
+      },
+      {
+        "date": null,
+        "label": "Agency plans and maturity milestones run 90, 120, 180, and 320 days from release of the Logging Reference Architecture.",
+        "status": "upcoming"
+      }
+    ],
     "applicability": "Federal executive departments and agencies addressed by the memorandum.",
     "affectedOrganizations": ["Federal agencies"],
-    "topics": ["Logging", "Incident response"],
-    "zeroTrust": false,
-    "zeroTrustExcerpts": [],
+    "topics": ["Logging", "Incident response", "Zero Trust"],
+    "zeroTrust": true,
+    "zeroTrustExcerpts": [
+      {
+        "excerpt": "The LRA will align with the Zero Trust Maturity Model.",
+        "locator": "Appendix A, page 5"
+      }
+    ],
     "sourceUrls": [
       "https://www.whitehouse.gov/wp-content/uploads/2026/05/M-26-14-Ensuring-Effective-and-Efficient-Agency-Logging-and-Network-Visibility-to-Defend-Against-Evolving-Cyber-Threats.pdf"
     ],
-    "sourceLocators": ["Prioritization"],
+    "sourceLocators": [
+      "Prioritization",
+      "Agency Actions",
+      "Appendix A",
+      "Appendix B"
+    ],
     "relatedDocuments": [],
     "supersedes": ["omb-m-21-31"],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
     "contentHash": "8495b2e66cccdb47e178ef4af71e76e5408791c1cc211d01c987b89734f1ac78",
-    "extractedText": "Effective immediately, OMB Memorandum M-21-31 is rescinded. Agencies must prioritize Continuous Event Monitoring and Threat Hunting, Investigation, Response, and Forensics.",
+    "extractedText": "Effective immediately, OMB Memorandum M-21-31 is rescinded. Agencies must prioritize Continuous Event Monitoring and Threat Hunting, Investigation, Response, and Forensics. The LRA will align with the Zero Trust Maturity Model.",
     "changeHistory": [
       {
         "date": "2026-07-02",
