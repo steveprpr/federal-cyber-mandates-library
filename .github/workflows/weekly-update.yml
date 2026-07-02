@@ -1,0 +1,44 @@
+name: Weekly source review
+on:
+  schedule:
+    - cron: "17 12 * * 2"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    env:
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'qwen/qwen3.5-27b' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Discover, hash, extract, and validate drafts
+        run: npm run update:check
+      - run: npm run validate:data
+      - run: npm test
+      - name: Publish report to job summary
+        if: always()
+        run: test -f artifacts/change-report.md && cat artifacts/change-report.md >> "$GITHUB_STEP_SUMMARY" || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          {
+            name: federal-mandates-change-report,
+            path: artifacts,
+            if-no-files-found: ignore,
+          }
+      - name: Open human-review pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automated/federal-mandates-weekly-review
+          delete-branch: true
+          commit-message: "data: propose weekly federal mandate updates"
+          title: "Weekly federal mandate source review"
+          body-path: artifacts/change-report.md
+          labels: data-review, automated-draft
+          draft: true
