@@ -10,9 +10,20 @@ for (const item of mandates) {
   });
   if (!response.ok)
     throw new Error(`${item.identifier}: HTTP ${response.status}`);
-  item.contentHash = createHash("sha256")
-    .update(Buffer.from(await response.arrayBuffer()))
-    .digest("hex");
+  const body = Buffer.from(await response.arrayBuffer());
+  const contentType = response.headers.get("content-type") ?? "";
+  const hashInput =
+    contentType.includes("pdf") || response.url.toLowerCase().endsWith(".pdf")
+      ? body
+      : body
+          .toString("utf8")
+          .replace(/<script[\s\S]*?<\/script>/gi, " ")
+          .replace(/<style[\s\S]*?<\/style>/gi, " ")
+          .replace(/<[^>]+>/g, " ")
+          .replace(/&nbsp;/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+  item.contentHash = createHash("sha256").update(hashInput).digest("hex");
   console.log(`Hashed ${item.identifier}`);
 }
 await writeFile(

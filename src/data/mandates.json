@@ -21,16 +21,25 @@
     ],
     "deadlines": [],
     "applicability": "Federal executive departments and agencies addressed by the memorandum.",
-    "affectedOrganizations": ["Federal agencies"],
-    "topics": ["Logging", "Incident response"],
+    "affectedOrganizations": [
+      "Federal agencies"
+    ],
+    "topics": [
+      "Logging",
+      "Incident response"
+    ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
     "sourceUrls": [
       "https://www.whitehouse.gov/wp-content/uploads/2026/05/M-26-14-Ensuring-Effective-and-Efficient-Agency-Logging-and-Network-Visibility-to-Defend-Against-Evolving-Cyber-Threats.pdf"
     ],
-    "sourceLocators": ["Prioritization"],
+    "sourceLocators": [
+      "Prioritization"
+    ],
     "relatedDocuments": [],
-    "supersedes": ["omb-m-21-31"],
+    "supersedes": [
+      "omb-m-21-31"
+    ],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
     "contentHash": "8495b2e66cccdb47e178ef4af71e76e5408791c1cc211d01c987b89734f1ac78",
@@ -63,7 +72,10 @@
     ],
     "deadlines": [],
     "applicability": "Federal departments and agencies identified in the order.",
-    "affectedOrganizations": ["Federal agencies", "Critical infrastructure"],
+    "affectedOrganizations": [
+      "Federal agencies",
+      "Critical infrastructure"
+    ],
     "topics": [
       "Secure software development",
       "Post-quantum cryptography",
@@ -75,12 +87,14 @@
     "sourceUrls": [
       "https://www.whitehouse.gov/presidential-actions/2025/06/sustaining-select-efforts-to-strengthen-the-nations-cybersecurity-and-amending-executive-order-13694-and-executive-order-14144/"
     ],
-    "sourceLocators": ["Section 1"],
+    "sourceLocators": [
+      "Section 1"
+    ],
     "relatedDocuments": [],
     "supersedes": [],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
-    "contentHash": "76627496fa02a43995c5a03283477361b863c51932796b87188a4201a867da92",
+    "contentHash": "24178b4538904b4a6f989a2e443094f8fadd3b920923850f9b632bca7a253783",
     "extractedText": "Executive Order 14306 amends Executive Order 14144 and sustains select efforts concerning software security, routing security, encryption, and post-quantum cryptography.",
     "changeHistory": [
       {
@@ -109,19 +123,26 @@
     ],
     "deadlines": [],
     "applicability": "Federal Civilian Executive Branch agencies; exclusions follow the statutory BOD scope.",
-    "affectedOrganizations": ["Federal civilian executive branch agencies"],
-    "topics": ["Cloud security", "Identity and access management"],
+    "affectedOrganizations": [
+      "Federal civilian executive branch agencies"
+    ],
+    "topics": [
+      "Cloud security",
+      "Identity and access management"
+    ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
     "sourceUrls": [
       "https://www.cisa.gov/news-events/directives/bod-25-01-implementing-secure-practices-cloud-services"
     ],
-    "sourceLocators": ["Required Actions"],
+    "sourceLocators": [
+      "Required Actions"
+    ],
     "relatedDocuments": [],
     "supersedes": [],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
-    "contentHash": "72c75d672f426ae73150a4f14999df3eb482fd17aebbb52cf2156c987e1ed17d",
+    "contentHash": "4971030cba3a5837f60302f0d32ca4a502e4f359a1772dc485e6d06bd47dac94",
     "extractedText": "Binding Operational Directive 25-01 requires Federal Civilian Executive Branch agencies to implement secure practices for cloud services.",
     "changeHistory": [
       {
@@ -153,18 +174,23 @@
       "Critical infrastructure",
       "Other organizations"
     ],
-    "topics": ["Risk management", "Critical infrastructure"],
+    "topics": [
+      "Risk management",
+      "Critical infrastructure"
+    ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
     "sourceUrls": [
       "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
     ],
-    "sourceLocators": ["Abstract"],
+    "sourceLocators": [
+      "Abstract"
+    ],
     "relatedDocuments": [],
     "supersedes": [],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
-    "contentHash": "515fc9e912f325366db091622b3db42155ef3b8734c1a137358b4cfefd5ead0d",
+    "contentHash": "f36aa6e6260928c7e7877550992d71592072ce60e3b3030076e1c8ccccb62021",
     "extractedText": "The NIST Cybersecurity Framework 2.0 provides guidance to industry, government agencies, and other organizations to manage cybersecurity risks.",
     "changeHistory": [
       {
@@ -192,7 +218,9 @@
     "requirements": [],
     "deadlines": [],
     "applicability": "Federal agencies implementing Zero Trust; the maturity model itself is guidance.",
-    "affectedOrganizations": ["Federal agencies"],
+    "affectedOrganizations": [
+      "Federal agencies"
+    ],
     "topics": [
       "Zero Trust",
       "Identity and access management",
@@ -208,8 +236,14 @@
     "sourceUrls": [
       "https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf"
     ],
-    "sourceLocators": ["Cover", "Maturity Model Overview"],
-    "relatedDocuments": ["omb-m-22-09", "nist-sp-800-207"],
+    "sourceLocators": [
+      "Cover",
+      "Maturity Model Overview"
+    ],
+    "relatedDocuments": [
+      "omb-m-22-09",
+      "nist-sp-800-207"
+    ],
     "supersedes": [],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
@@ -249,19 +283,26 @@
       }
     ],
     "applicability": "Federal Civilian Executive Branch systems; statutory exclusions apply.",
-    "affectedOrganizations": ["Federal civilian executive branch agencies"],
-    "topics": ["Vulnerability management", "Endpoint detection and response"],
+    "affectedOrganizations": [
+      "Federal civilian executive branch agencies"
+    ],
+    "topics": [
+      "Vulnerability management",
+      "Endpoint detection and response"
+    ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
     "sourceUrls": [
       "https://www.cisa.gov/news-events/directives/bod-23-01-improving-asset-visibility-and-vulnerability-detection-federal-networks"
     ],
-    "sourceLocators": ["Required Actions"],
+    "sourceLocators": [
+      "Required Actions"
+    ],
     "relatedDocuments": [],
     "supersedes": [],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
-    "contentHash": "7d8701b0d2e2b757d291074f1b67ceafd14e5797531e80e1b37d49db67bf01bb",
+    "contentHash": "1dabb837c1680de0476a85f69c4673837be119bddddf747f96250ff39ef99e3d",
     "extractedText": "The directive focuses on asset discovery and vulnerability enumeration. Agencies must initiate on-demand asset discovery within 72 hours of a CISA request and provide available results within 7 days.",
     "changeHistory": [
       {
@@ -300,13 +341,17 @@
     ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
-    "sourceUrls": ["https://csrc.nist.gov/pubs/sp/800/218/final"],
-    "sourceLocators": ["Abstract"],
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/218/final"
+    ],
+    "sourceLocators": [
+      "Abstract"
+    ],
     "relatedDocuments": [],
     "supersedes": [],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
-    "contentHash": "75a7a2c338c4a187dd3491fad3e3dac9bccdf04d9f1c4bc8268546c494f9d880",
+    "contentHash": "2632c2e7247c166e03cb1899c8c1ae070736654195d94d339f55f434089a5e3b",
     "extractedText": "This document recommends the Secure Software Development Framework, a core set of high-level secure software development practices that can be integrated into each software development life cycle implementation.",
     "changeHistory": [
       {
@@ -344,7 +389,9 @@
       }
     ],
     "applicability": "Federal civilian executive branch agencies, subject to the memorandum's scope and exceptions.",
-    "affectedOrganizations": ["Federal civilian executive branch agencies"],
+    "affectedOrganizations": [
+      "Federal civilian executive branch agencies"
+    ],
     "topics": [
       "Zero Trust",
       "Identity and access management",
@@ -363,8 +410,14 @@
     "sourceUrls": [
       "https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf"
     ],
-    "sourceLocators": ["Page 4", "Section III"],
-    "relatedDocuments": ["cisa-ztmm-v2", "nist-sp-800-207"],
+    "sourceLocators": [
+      "Page 4",
+      "Section III"
+    ],
+    "relatedDocuments": [
+      "cisa-ztmm-v2",
+      "nist-sp-800-207"
+    ],
     "supersedes": [],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
@@ -396,17 +449,26 @@
     "requirements": [],
     "deadlines": [],
     "applicability": "Historical requirements for federal agencies; no longer current after rescission.",
-    "affectedOrganizations": ["Federal agencies"],
-    "topics": ["Logging", "Incident response"],
+    "affectedOrganizations": [
+      "Federal agencies"
+    ],
+    "topics": [
+      "Logging",
+      "Incident response"
+    ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
     "sourceUrls": [
       "https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf"
     ],
-    "sourceLocators": ["Appendix A"],
+    "sourceLocators": [
+      "Appendix A"
+    ],
     "relatedDocuments": [],
     "supersedes": [],
-    "supersededBy": ["omb-m-26-14"],
+    "supersededBy": [
+      "omb-m-26-14"
+    ],
     "verifiedAt": "2026-07-02",
     "contentHash": "eddb4ac590d5ba3411f84e714207b715644891f44478efd693f6f73298006b69",
     "extractedText": "M-21-31 established event logging maturity requirements. Effective immediately, OMB Memorandum M-21-31 is rescinded by M-26-14.",
@@ -435,7 +497,10 @@
     "requirements": [],
     "deadlines": [],
     "applicability": "Enterprises considering Zero Trust architecture; this publication is guidance, not a universal mandate.",
-    "affectedOrganizations": ["Federal agencies", "Other organizations"],
+    "affectedOrganizations": [
+      "Federal agencies",
+      "Other organizations"
+    ],
     "topics": [
       "Zero Trust",
       "Identity and access management",
@@ -448,13 +513,20 @@
         "locator": "Abstract"
       }
     ],
-    "sourceUrls": ["https://csrc.nist.gov/pubs/sp/800/207/final"],
-    "sourceLocators": ["Abstract"],
-    "relatedDocuments": ["omb-m-22-09", "cisa-ztmm-v2"],
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/207/final"
+    ],
+    "sourceLocators": [
+      "Abstract"
+    ],
+    "relatedDocuments": [
+      "omb-m-22-09",
+      "cisa-ztmm-v2"
+    ],
     "supersedes": [],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
-    "contentHash": "418ac7d66dda2edf757a42b662b9a84b610a9c675b29ed759235a1ab1b72700a",
+    "contentHash": "41fe08cd2641801989e4d327d757a69a040910507ab208737491e907a84e2624",
     "extractedText": "Zero trust (ZT) is the term for an evolving set of cybersecurity paradigms that move defenses from static, network-based perimeters to focus on users, assets, and resources. This document contains an abstract definition of zero trust architecture.",
     "changeHistory": [
       {
@@ -484,12 +556,21 @@
     ],
     "deadlines": [],
     "applicability": "Federal executive branch departments and agencies except statutory and listed exclusions.",
-    "affectedOrganizations": ["Federal civilian executive branch agencies"],
-    "topics": ["Vulnerability management", "Secure software development"],
+    "affectedOrganizations": [
+      "Federal civilian executive branch agencies"
+    ],
+    "topics": [
+      "Vulnerability management",
+      "Secure software development"
+    ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
-    "sourceUrls": ["https://www.cisa.gov/sites/default/files/bod-20-01.pdf"],
-    "sourceLocators": ["Required Actions"],
+    "sourceUrls": [
+      "https://www.cisa.gov/sites/default/files/bod-20-01.pdf"
+    ],
+    "sourceLocators": [
+      "Required Actions"
+    ],
     "relatedDocuments": [],
     "supersedes": [],
     "supersededBy": [],

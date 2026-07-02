@@ -44,16 +44,14 @@ async function extract(response: Response) {
     }
   }
   const html = body.toString("utf8");
-  return {
-    text: html
-      .replace(/<script[\s\S]*?<\/script>/gi, " ")
-      .replace(/<style[\s\S]*?<\/style>/gi, " ")
-      .replace(/<[^>]+>/g, " ")
-      .replace(/&nbsp;/g, " ")
-      .replace(/\s+/g, " ")
-      .trim(),
-    hash: createHash("sha256").update(body).digest("hex"),
-  };
+  const text = html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  return { text, hash: createHash("sha256").update(text).digest("hex") };
 }
 async function draft(item: Mandate, text: string, hash: string) {
   const key = process.env.OPENROUTER_API_KEY,
