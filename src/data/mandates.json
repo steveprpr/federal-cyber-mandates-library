@@ -33,8 +33,14 @@
       }
     ],
     "applicability": "Federal executive departments and agencies addressed by the memorandum.",
-    "affectedOrganizations": ["Federal agencies"],
-    "topics": ["Logging", "Incident response", "Zero Trust"],
+    "affectedOrganizations": [
+      "Federal agencies"
+    ],
+    "topics": [
+      "Logging",
+      "Incident response",
+      "Zero Trust"
+    ],
     "zeroTrust": true,
     "zeroTrustExcerpts": [
       {
@@ -52,7 +58,9 @@
       "Appendix B"
     ],
     "relatedDocuments": [],
-    "supersedes": ["omb-m-21-31"],
+    "supersedes": [
+      "omb-m-21-31"
+    ],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
     "contentHash": "8495b2e66cccdb47e178ef4af71e76e5408791c1cc211d01c987b89734f1ac78",
@@ -75,39 +83,121 @@
     "publicationDate": "2025-06-06",
     "effectiveDate": "2025-06-06",
     "status": "active",
-    "summary": "Amends Executive Orders 13694 and 14144 and sustains selected federal cybersecurity measures, including secure software, routing security, encryption, and post-quantum cryptography actions.",
+    "summary": "Amends Executive Orders 13694 and 14144 to sustain selected federal cybersecurity measures, including secure software development, routing security, encryption, and post-quantum cryptography actions, while removing specific prior directives regarding threat information sharing and intrusion detection.",
     "executiveHighlights": [
       "Amends rather than wholly rescinds Executive Order 14144.",
-      "Retains selected technical cybersecurity initiatives."
+      "Retains selected technical cybersecurity initiatives including Secure Software Development Framework (SSDF) updates and post-quantum cryptography (PQC) transition.",
+      "Introduces new requirements for AI software vulnerability management and a pilot program for rules-as-code approaches.",
+      "Modifies Executive Order 13694 to limit malicious cyber-enabled activity blocking to 'foreign persons'."
     ],
     "requirements": [
-      "Carries forward amended federal actions concerning secure software and cryptographic transition."
+      "NIST to establish a consortium for secure software development guidance by August 1, 2025.",
+      "NIST to update SP 800-53 for patch deployment guidance by September 2, 2025.",
+      "NIST to publish a preliminary update to the SSDF by December 1, 2025, and a final version within 120 days thereafter.",
+      "CISA and NSA to release a list of product categories with widely available PQC support by December 1, 2025.",
+      "NSA and OMB to issue requirements for agencies to support TLS 1.3 or successor versions by January 2, 2030.",
+      "Agencies to incorporate management of AI software vulnerabilities into existing processes by November 1, 2025.",
+      "OMB to issue guidance on modern practices and architectures within 3 years of the order date.",
+      "Establishment of a pilot program for rules-as-code approaches within 1 year of the order date.",
+      "FAR Council to amend the FAR to require Cyber Trust Mark labeling for consumer IoT products by January 4, 2027."
     ],
-    "deadlines": [],
-    "applicability": "Federal departments and agencies identified in the order.",
-    "affectedOrganizations": ["Federal agencies", "Critical infrastructure"],
+    "deadlines": [
+      {
+        "date": "2025-08-01",
+        "label": "NIST consortium establishment for secure software guidance",
+        "status": "upcoming"
+      },
+      {
+        "date": "2025-09-02",
+        "label": "NIST update to SP 800-53 for patch deployment",
+        "status": "upcoming"
+      },
+      {
+        "date": "2025-11-01",
+        "label": "AI vulnerability management integration and dataset accessibility",
+        "status": "upcoming"
+      },
+      {
+        "date": "2025-12-01",
+        "label": "PQC product category list release and preliminary SSDF update",
+        "status": "upcoming"
+      },
+      {
+        "date": "2026-06-06",
+        "label": "Rules-as-code pilot program establishment (1 year from order)",
+        "status": "upcoming"
+      },
+      {
+        "date": "2027-01-04",
+        "label": "FAR amendment for Cyber Trust Mark labeling",
+        "status": "upcoming"
+      },
+      {
+        "date": "2030-01-02",
+        "label": "Agency support for TLS 1.3 or successor versions",
+        "status": "upcoming"
+      }
+    ],
+    "applicability": "Federal departments and agencies identified in the order, excluding National Security Systems (NSS) and debilitating impact systems except as provided in subsection 4(f).",
+    "affectedOrganizations": [
+      "Federal agencies",
+      "Critical infrastructure",
+      "National Security Systems (NSS)",
+      "Intelligence Community",
+      "Department of Defense",
+      "Department of Commerce (NIST)",
+      "Department of Homeland Security (CISA)",
+      "National Security Agency (NSA)",
+      "Office of Management and Budget (OMB)",
+      "Department of Energy",
+      "National Science Foundation",
+      "Department of Defense",
+      "Director of National Intelligence"
+    ],
     "topics": [
       "Secure software development",
       "Post-quantum cryptography",
       "Encryption",
-      "Critical infrastructure"
+      "Critical infrastructure",
+      "Artificial intelligence security",
+      "Routing security",
+      "Rules-as-code",
+      "Cyber Trust Mark",
+      "Malicious cyber-enabled activities"
     ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
     "sourceUrls": [
       "https://www.whitehouse.gov/presidential-actions/2025/06/sustaining-select-efforts-to-strengthen-the-nations-cybersecurity-and-amending-executive-order-13694-and-executive-order-14144/"
     ],
-    "sourceLocators": ["Section 1"],
-    "relatedDocuments": [],
+    "sourceLocators": [
+      "Section 1",
+      "Section 2",
+      "Section 3",
+      "Section 4"
+    ],
+    "relatedDocuments": [
+      "Executive Order 13694",
+      "Executive Order 14144",
+      "National Security Memorandum 10",
+      "NIST Special Publication 800-218",
+      "NIST Special Publication 800-53",
+      "OMB Circular A-130",
+      "Federal Acquisition Regulation (FAR)"
+    ],
     "supersedes": [],
     "supersededBy": [],
-    "verifiedAt": "2026-07-02",
-    "contentHash": "24178b4538904b4a6f989a2e443094f8fadd3b920923850f9b632bca7a253783",
-    "extractedText": "Executive Order 14306 amends Executive Order 14144 and sustains select efforts concerning software security, routing security, encryption, and post-quantum cryptography.",
+    "verifiedAt": "2026-10-06",
+    "contentHash": "61d4645fba91dd15848aaad42ed25c494204d7c5ff12cf27b49d3d243b52472a",
+    "extractedText": "Sustaining Select Efforts to Strengthen the Nation&#039;s Cybersecurity and Amending Executive Order 13694 and Executive Order 14144 &#8211; The White House Skip to content Menu Search Search for: Scroll Left News Gallery Livestream Election Integrity SAVE America Trump Accounts Trump TV Contact News Contact Election Integrity SAVE America Trump Accounts Gallery Trump TV Livestream Investments Scroll Right Close News Featured Releases Aliens Lab Leak: The True Origins of Covid-19 January 6: A Date Which Will Live in Infamy Arrested: Worst of the Worst This Is Our Why Criminal Aliens Receiving Medicaid The JFK Files The RFK Files Briefings &amp; Statements Fact Sheets Presidential Actions Executive Orders Nominations &amp; Appointments Presidential Memoranda Proclamations Remarks Research Administration President Donald J. Trump First Lady Melania Trump Vice President JD Vance Second Lady Usha Vance The Cabinet Executive Office of The President Office of Management and Budget Office of Science and Technology Policy Council of Economic Advisors Office of the National Cyber Director Office of National Drug Control Policy Council on Environmental Quality Media Trump TV Photo Gallery Video Library Livestream White House Wire Media Offenders Arcade Priorities Top Priorities Lead the World in AI Grow the Economy Strengthen National Security Reform Government (DOGE) Make America Healthy Again Secure the Border Unleash American Energy Support Public Safety Protect Religious Liberty Key Initiatives Election Integrity The SAVE America Act Working Families Tax Cuts Ratepayer Protection Pledge Fraud Task Force Science: A New Golden Age School Choice Freedom 250 AI.Gov Crypto FIFA Agriculture Restoring Maritime Dominance Fostering the Future Summer Reading Challenge Make America Healthy Again The MAHA Report The Great Healthcare Plan TrumpRx Eat Real Food Presidential Physical Fitness Test Council on Sports, Fitness, and Nutrition Investments Major Investments in America Trump Accounts for Children Trump IRA The Trump Gold Card Pledge to America’s Youth Wins and Achievements About The White House A Timeline History of the United States Our Government America&#8217;s Founding Freedom 250 The Founders Museum America&#8217;s Founding Fathers The Story of America: Video Series Road to Liberty: Video Series Signers of the Declaration of Independence Presidential Walk of Fame Holidays at The White House Christmas at The White House The White House Easter Egg Roll Get Involved Contact The White House Presidential Greetings Visit The White House Download the White House App Apply for an Internship Find Your Representative SAVE America Stay Informed Email Updates Text WIN to 45470 for Alerts Download the White House App Follow on Social Media Featured Featured Official White House App 365 Days of Wins About President Trump About Vice President Vance 365 Days of Wins Official White House App The Great Healthcare Plan INVESTMENT ANNOUNCEMENTS White House Wire First Year in Office America&#039;s Founding East Wing Expansion View Full Video Contact The White House X Instagram TikTok Share Icon Share Icon Facebook YouTube Presidential Actions SUSTAINING SELECT EFFORTS TO STRENGTHEN THE NATION&#8217;S CYBERSECURITY AND AMENDING EXECUTIVE ORDER 13694 AND EXECUTIVE ORDER 14144 Executive Orders June 6, 2025 Executive Order 14306 By the authority vested in me as President by the Constitution and the laws of the United States of America, including the International Emergency Economic Powers Act (50 U.S.C. 1701 et seq .), the National Emergencies Act (50 U.S.C. 1601 et seq .), section 212(f) of the Immigration and Nationality Act of 1952 (8 U.S.C. 1182(f)), and section 301 of title 3, United States Code, it is hereby ordered: Section 1 . Amendments to Executive Order 14144 . Executive Order 14144 of January 16, 2025 (Strengthening and Promoting Innovation in the Nation&#8217;s Cybersecurity), is hereby amended by: (a) striking subsections 2(a)-(b) and redesignating subsections 2(c), 2(d), and 2(e) as subsections 2(a), 2(b), and 2(c), respectively; (b) striking the first sentence of subsection 2(e); (c) striking subsections 3(a)-(b) and redesignating subsections 3(c), 3(d), and 3(e) as subsections 3(a), 3(b), and 3(c), respectively; (d) striking from subsection 3(c) the phrase &#8220;In Executive Order 14028, I directed the Secretary of Defense and the Secretary of Homeland Security to establish procedures to immediately share threat information to strengthen the collective defense of Department of Defense and civilian networks.&#8221;; (e) striking from subsection 3(c)(i)(A) the word &#8220;novel&#8221;; (f) striking subsection 4(b)(iv); (g) striking subsections 4(d)(ii)-(iii); (h) striking section 5 and redesignating sections 6, 7, 8, 9, 10, and 11 as sections 5, 6, 7, 8, 9, and 10, respectively; and (i) striking from subsection 8(c) the phrase &#8220;in the areas of intrusion detection, use of hardware roots of trust for secure booting, and development and deployment of security patches.&#8221;. Sec . 2 . Further Amendments to Executive Order 14144 . Executive Order 14144 is hereby amended by: (a) striking section 1 and inserting, in lieu thereof, the following: &#8220;Section 1. Policy. Foreign nations and criminals continue to conduct cyber campaigns targeting the United States and Americans. The People&#8217;s Republic of China presents the most active and persistent cyber threat to United States Government, private sector, and critical infrastructure networks, but significant threats also emanate from Russia, Iran, North Korea, and others who undermine United States cybersecurity. These campaigns disrupt the delivery of critical services across the Nation, cost billions of dollars, and undermine Americans&#8217; security and privacy. More must be done to improve the Nation&#8217;s cybersecurity against these threats. I am ordering additional actions to improve our Nation&#8217;s cybersecurity, focusing on defending our digital infrastructure, securing the services and capabilities most vital to the digital domain, and building our capability to address key threats.&#8221;; (b) striking subsection 2(c) and inserting, in lieu thereof, the following: &#8220;(c) Relevant executive departments and agencies (agencies) shall take the following actions: (i) By August 1, 2025, the Secretary of Commerce, acting through the Director of NIST, shall establish a consortium with industry at the National Cybersecurity Center of Excellence to develop guidance, informed by the consortium as appropriate, that demonstrates the implementation of secure software development, security, and operations practices based on NIST Special Publication 800–218 ( Secure Software Development Framework (SSDF)). (ii) By September 2, 2025, the Secretary of Commerce, acting through the Director of NIST, shall update NIST Special Publication 800–53 ( Security and Privacy Controls for Information Systems and Organizations ) to provide guidance on how to securely and reliably deploy patches and updates. (iii) By December 1, 2025, the Secretary of Commerce, acting through the Director of NIST, in consultation with the heads of such agencies as the Director of NIST deems appropriate, shall develop and publish a preliminary update to the SSDF. This preliminary update shall include practices, procedures, controls, and implementation examples regarding the secure and reliable development and delivery of software as well as the security of the software itself. Within 120 days of publishing the preliminary update, the Secretary of Commerce, acting through the Director of NIST, shall publish a final version of the updated SSDF.&#8221;; (c) striking from subsection 4(b) the phrase &#8220;The security of Internet traffic depends on data being correctly routed and delivered to the intended recipient network. Routing information originated and propagated across the Internet, utilizing the Border Gateway Protocol (BGP), is vulnerable to attack and misconfiguration.&#8221; and inserting, in lieu thereof, the following: &#8220;Relevant agencies shall take the following actions:&#8221;; (d) striking subsection 4(f) and inserting, in lieu thereof, the following: &#8220;(f) A quantum computer of sufficient size and sophistication &#8212; also known as a cryptanalytically relevant quantum computer (CRQC) &#8212; will be capable of breaking much of the public-key cryptography used on digital systems across the United States and around the world. National Security Memorandum 10 of May 4, 2022 (Promoting United States Leadership in Quantum Computing While Mitigating Risks to Vulnerable Cryptographic Systems), directed the Federal Government to prepare for a transition to cryptographic algorithms that would not be vulnerable to a CRQC. (i) By December 1, 2025, the Secretary of Homeland Security, acting through the Director of the Cybersecurity and Infrastructure Security Agency (CISA), and in consultation with the Director of the National Security Agency, shall release and thereafter regularly update a list of product categories in which products that support post-quantum cryptography (PQC) are widely available. (ii) By December 1, 2025, to prepare for transition to PQC, the Director of the National Security Agency with respect to National Security Systems (NSS), and the Director of OMB with respect to non-NSS, shall each issue requirements for agencies to support, as soon as practicable, but not later than January 2, 2030, Transport Layer Security protocol version 1.3 or a successor version.&#8221;; (e) striking former section 6 (newly designated section 5) and inserting, in lieu thereof, the following: &#8220;Sec. 5. Promoting Security with and in Artificial Intelligence. Artificial intelligence (AI) has the potential to transform cyber defense by rapidly identifying vulnerabilities, increasing the scale of threat detection techniques, and automating cyber defense. (a) By November 1, 2025, the Secretary of Commerce, acting through the Director of NIST; the Secretary of Energy; the Secretary of Homeland Security, acting through the Under Secretary for Science and Technology; and the Director of the National Science Foundation shall ensure that existing datasets for cyber defense research have been made accessible to the broader academic research community (either securely or publicly) to the maximum extent feasible, in consideration of business confidentiality and national security. (b) By November 1, 2025, the Secretary of Defense, the Secretary of Homeland Security, and the Director of National Intelligence, in coordination with appropriate officials within the Executive Office of the President, to include officials within the Office of Science and Technology Policy, the Office of the National Cyber Director, and the Director of OMB, shall incorporate management of AI software vulnerabilities and compromises into their respective agencies&#8217; existing processes and interagency coordination mechanisms for vulnerability management, including through incident tracking, response, and reporting, and by sharing indicators of compromise for AI systems.&#8221;; (f) striking section 7 and inserting, in lieu thereof, the following: &#8220;Sec. 7. Aligning Policy to Practice. Agencies&#8217; policies must align investments and priorities to improve network visibility and security controls to reduce cyber risks. In consultation with the National Cyber Director, agencies shall take the following actions: (a) Within 3 years of the date of this order, the Director of OMB shall issue guidance, including any necessary revision to OMB Circular A–130, to address critical risks and adapt modern practices and architectures across Federal information systems and networks. (b) Within 1 year of the date of this order, the Secretary of Commerce, acting through the Director of NIST; the Secretary of Homeland Security, acting through the Director of CISA; and the Director of OMB shall establish a pilot program of a rules-as- code approach for machine-readable versions of policy and guidance that OMB, NIST, and CISA publish and manage regarding cybersecurity. (c) Within 1 year of the date of this order, agency members of the FAR Council shall, as appropriate and consistent with applicable law, jointly take steps to amend the FAR to adopt requirements for agencies to, by January 4, 2027, require vendors to the Federal Government of consumer Internet-of-Things products, as defined by 47 CFR 8.203(b), to carry United States Cyber Trust Mark labeling for those products.&#8221;; and (g) striking subsection 8(a) and inserting, in lieu thereof, the following: &#8220;(a) Except as specifically provided for in subsection 4(f) of this order, sections 1 through 7 of this order shall not apply to Federal information systems that are NSS or are otherwise identified by the Department of Defense or the Intelligence Community as debilitating impact systems.&#8221;. Sec . 3 . Amendments to Executive Order 13694 . Executive Order 13694 of April 1, 2015 (Blocking the Property of Certain Persons Engaging in Significant Malicious Cyber-Enabled Activities), as amended by Executive Order 13757 of December 28, 2016 (Taking Additional Steps to Address the National Emergency With Respect to Significant Malicious Cyber-Enabled Activities), Executive Order 13984 of January 19, 2021 (Taking Additional Steps to Address the National Emergency With Respect to Significant Malicious Cyber-Enabled Activities), and Executive Order 14144, is hereby further amended by: (a) striking from subsection 1(a)(ii) the phrase &#8220;any person&#8221; and inserting in lieu thereof &#8220;any foreign person&#8221;; and (b) striking from subsection 1(a)(iii) the phrase &#8220;any person&#8221; and inserting in lieu thereof &#8220;any foreign person.&#8221;. Sec . 4 . General Provisions . (a) Nothing in this order shall be construed to impair or otherwise affect: (i) the authority granted by law to an executive department or agency, or the head thereof; or (ii) the functions of the Director of OMB relating to budgetary, administrative, or legislative proposals. (b) This order shall be implemented in a manner consistent with applicable law and subject to the availability of appropriations. (c) This order is not intended to, and does not, create any right or benefit, substantive or procedural, enforceable at law or in equity by any party against the United States, its departments, agencies, or entities, its officers, employees, or agents, or any other person. (d) The costs for publication of this order shall be borne by the Department of Homeland Security. DONALD J. TRUMP THE WHITE HOUSE, June 6, 2025. eo-14306 Download Related Securing the Nation Against Advanced Cryptographic Attacks Presidential Actions , Executive Orders June 22, 2026 Adjusting Certain Delegations Under the Defense Production Act Presidential Actions , Executive Orders September 8, 2026 Adjusting Certain Delegations Under the Defense Production Act Presidential Actions , Executive Orders March 13, 2026 National Security Presidential Memorandum/NSPM-12 Presidential Actions , Presidential Memoranda June 12, 2026 Promoting Advanced Artificial Intelligence Innovation and Security Presidential Actions , Executive Orders June 2, 2026 1 2 3 &hellip; 84 Next Page About Administration Contact Internships Stay Informed Privacy Policy Media News Gallery Video Library Media Offenders White House Wire Initiatives Freedom 250 Investments Working Families Tax Cuts AI.Gov DOGE Subscribe to the WH Newsletter Please leave blank. Click here or text 45470 to receive updates Download The White House App: Available On The App Store Get It On Google Play Get Updates Straight to Your Desktop Available On Download Browser Extension Enable Desktop Notifications X Instagram TikTok Share Icon Share Icon Facebook YouTube Your browser does not support the audio element. Click to listen 0:00 9:56 0.75× 1× 1.5× 2× Notifications",
     "changeHistory": [
       {
         "date": "2026-07-02",
         "description": "Seeded from the official White House executive order page."
+      },
+      {
+        "date": "2025-06-06",
+        "description": "Executive Order 14306 issued, amending EO 13694 and EO 14144."
       }
     ]
   },
@@ -124,31 +214,77 @@
     "status": "active",
     "summary": "Directs federal civilian agencies to implement secure configuration practices for specified cloud services using CISA's Secure Cloud Business Applications baselines.",
     "executiveHighlights": [
-      "Establishes compulsory cloud security actions for covered FCEB agencies."
+      "Establishes compulsory cloud security actions for covered FCEB agencies.",
+      "Requires identification of in-scope cloud tenants by February 21, 2025.",
+      "Mandates deployment of SCuBA assessment tools by April 25, 2025.",
+      "Requires implementation of mandatory SCuBA policies by June 20, 2025."
     ],
     "requirements": [
-      "Implement required secure cloud configuration baselines and provide required status information to CISA."
+      "Identify all cloud tenants within the scope of this Directive and provide tenant name and system owning agency/component by February 21, 2025.",
+      "Update tenant inventory in the first quarter annually.",
+      "Deploy all SCuBA assessment tools for in-scope cloud tenants by April 25, 2025.",
+      "Begin continuous reporting via integration with CISA's continuous monitoring solution or manual quarterly reporting in a machine-readable format.",
+      "Implement all mandatory SCuBA policies effective as of issuance by June 20, 2025.",
+      "Implement all future updates to mandatory SCuBA policies in accordance with timelines on the Required Configurations website.",
+      "Implement all mandatory SCuBA Secure Configuration Baselines and begin continuous monitoring for new cloud tenants prior to granting an Authorization to Operate (ATO).",
+      "Identify and explain deviations from mandatory SCuBA policies in SCuBA assessment tool outputs reported to CISA."
     ],
-    "deadlines": [],
-    "applicability": "Federal Civilian Executive Branch agencies; exclusions follow the statutory BOD scope.",
-    "affectedOrganizations": ["Federal civilian executive branch agencies"],
-    "topics": ["Cloud security", "Identity and access management"],
+    "deadlines": [
+      {
+        "date": "2025-02-21",
+        "label": "Identify all cloud tenants within scope",
+        "status": "upcoming"
+      },
+      {
+        "date": "2025-04-25",
+        "label": "Deploy all SCuBA assessment tools",
+        "status": "upcoming"
+      },
+      {
+        "date": "2025-06-20",
+        "label": "Implement all mandatory SCuBA policies",
+        "status": "upcoming"
+      }
+    ],
+    "applicability": "Federal Civilian Executive Branch agencies; exclusions follow the statutory BOD scope (national security systems, certain DoD, and Intelligence Community systems).",
+    "affectedOrganizations": [
+      "Federal civilian executive branch agencies"
+    ],
+    "topics": [
+      "Cloud security",
+      "Identity and access management",
+      "Secure configuration baselines",
+      "Continuous monitoring"
+    ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
     "sourceUrls": [
       "https://www.cisa.gov/news-events/directives/bod-25-01-implementing-secure-practices-cloud-services"
     ],
-    "sourceLocators": ["Required Actions"],
-    "relatedDocuments": [],
+    "sourceLocators": [
+      "Required Actions",
+      "Scope",
+      "Background"
+    ],
+    "relatedDocuments": [
+      "BOD 26-04: Implementation Guidance for Prioritizing Security Updates Based on Risk",
+      "BOD 26-04: Prioritizing Security Updates Based on Risk",
+      "BOD 19-02: Vulnerability Remediation Requirements for Internet-Accessible Systems (Revoked)",
+      "BOD 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities (Revoked)"
+    ],
     "supersedes": [],
     "supersededBy": [],
-    "verifiedAt": "2026-07-02",
-    "contentHash": "4971030cba3a5837f60302f0d32ca4a502e4f359a1772dc485e6d06bd47dac94",
-    "extractedText": "Binding Operational Directive 25-01 requires Federal Civilian Executive Branch agencies to implement secure practices for cloud services.",
+    "verifiedAt": "2026-10-06",
+    "contentHash": "df343d8e2054bf3807358cc93d42f4fbb961aa8d2de382e34e84b9e778249037",
+    "extractedText": "BOD 25-01: Implementing Secure Practices for Cloud Services | CISA Skip to main content An official website of the United States government Here’s how you know Here’s how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock A locked padlock ) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites. Staying Secure at Events no-cost Cyber Services Cybersecurity Awareness Month KEV Catalog Report A Cyber Issue Search Menu Close Topics Topics Cybersecurity Best Practices Cyber Threats and Response Critical Infrastructure Security and Resilience Election Security Emergency Communications Industrial Control Systems Information and Communications Technology Supply Chain Security Partnerships and Collaboration Physical Security Risk Management How can we help? Government Educational Institutions Industry State, Local, Tribal, and Territorial Individuals and Families Small and Medium Businesses Find Help Locally Faith-Based Community Executives High-Risk Communities Spotlight Resources &amp; Tools Resources &amp; Tools All Resources &amp; Tools Services Programs Resources Training Groups News &amp; Events News &amp; Events Directives News Events Cybersecurity Alerts &amp; Advisories Request a CISA Speaker Congressional Testimony CISA Conferences CISA Live! Careers Careers Benefits &amp; Perks Hiring and Recruitment New Employee Orientation &amp; Onboarding Students &amp; Recent Graduates Veteran and Military Spouses About About Divisions &amp; Offices Regions Leadership Doing Business with CISA Site Links CISA GitHub CISA Central Contact Us Subscribe Transparency and Accountability Policies &amp; Plans Staying Secure at Events no-cost Cyber Services Cybersecurity Awareness Month KEV Catalog Report A Cyber Issue Breadcrumb Home News &amp; Events Cybersecurity Directives BOD 25-01: Implementing Secure Practices for Cloud Services Share: Opens in a new window Opens in a new window Opens in a new window Binding Operational Directives BOD 25-01: Implementing Secure Practices for Cloud Services December 17, 2024 Related topics: Cybersecurity Best Practices News &amp; Events Directives News Events Cybersecurity Alerts &amp; Advisories Request a CISA Speaker Congressional Testimony CISA Conferences CISA Live! This page contains a web-friendly version of the Cybersecurity and Infrastructure Security Agency’s Binding Operational Directive 25-01: Implementing Secure Practices for Cloud Services. A Binding Operational Directive is a compulsory direction to federal, executive branch, departments and agencies for purposes of safeguarding federal information and information systems. 44 U.S.C. § 3552(b)(1). Section 3553(b)(2) of title 44, U.S. Code, authorizes the Secretary of the Department of Homeland Security (DHS) to develop and oversee the implementation of binding operational directives. Federal agencies are required to comply with these directives. 44 U.S.C. § 3554(a)(1)(B)(ii). These directives do not apply to statutorily defined “national security systems” or to certain systems operated by the Department of Defense or the Intelligence Community. 44 U.S.C. § 3553(b), (d), (e)(2), (e)(3). This directive refers to the systems to which it applies as “Federal Civilian Executive Branch” systems, and to agencies operating those systems as “Federal Civilian Executive Branch” agencies. Implementation Guidance BOD 25-01: Implementation Guidance for Implementing Secure Practices for Cloud Services Background Malicious threat actors have increasingly targeted cloud environments and evolved tactics to gain initial cloud access. In recent cybersecurity incidents, the improper configuration of security controls in cloud environments introduced substantial risk and resulted in actual compromises. To combat these threats, the Cybersecurity and Infrastructure Security Agency (CISA) initiated the Secure Cloud Business Applications (SCuBA) project. Through the SCuBA project, CISA developed Secure Configuration Baselines, providing consistent and manageable cloud security configurations and assessment tools, allowing agencies and CISA to improve security for Federal Civilian Executive Branch (FCEB) assets hosted in cloud environments. This Directive requires agencies to implement a set of SCuBA Secure Configuration Baselines for certain Software as a Service (SaaS) products widely used in the FCEB, deploy CISA developed automated configuration assessment tools to measure against the required baselines, integrate with CISA’s continuous monitoring infrastructure, and remediate deviations from the secure configuration baselines. These steps reduce risks highlighted by recent adversary activity and increase resiliency for FCEB agencies against cyber threats. Maintaining secure configuration baselines is critical in the dynamic cybersecurity landscape, where vendor changes, software updates, and evolving security best practices shape the threat environment. As vendors frequently release new updates and patches to address vulnerabilities, security configurations must also adjust. Outdated security configurations expose systems to exploits that can be easily mitigated by recommended and mandatory security configurations. Additionally, security configuration best practices evolve and refine over time as new threats are discovered and countermeasures developed; this evolution necessitates periodic review and adjustment of security configuration baselines. By regularly updating security configurations, organizations leverage the latest protective measures, reducing the risk of security breaches and maintaining robust defense mechanisms against cyber threats. This Directive complements existing federal resources for cloud security, including the Federal Risk and Authorization Management Program (FedRAMP), relevant NIST guidance, and the CISA T rusted Internet Connections (TIC) 3.0 Cloud Use Case. Scope This Directive applies to all production or operational cloud tenants (operating in or as federal information systems) with an associated and finalized SCuBA Secure Configuration Baselines published by CISA. At the time of issuance of the Directive, CISA has published final SCuBA Secure Cloud Configuration Baselines for Microsoft Office 365. In the future, CISA may release additional SCuBA Secure Configuration Baselines for other cloud products. Upon issuance of applicable Baselines, such products will fall under the scope of this Directive. Any baselines not updated within one year will automatically fall out of scope and will be removed from the SCuBA Secure Configuration Baseline catalog, linked through the Binding Operational Directive 25-01 Required Configurations website . The following requirements pertain only to mandatory policies referenced within the SCuBA Secure Configuration Baselines as “shall” actions. All such mandatory policies are published on the Binding Operational Directive 25-01 Required Configurations website . SCuBA Secure Configuration Baselines specify both recommended policies that are left to agency discretion to implement (identified as “should” actions within the Baselines) and mandatory SCuBA policies that must be implemented pursuant to the requirements of this Directive (identified as “shall” actions within the Baselines). Required Actions For all in-scope cloud tenants Agencies shall: Identify all cloud tenants within the scope of this Directive: No later than Friday, February 21 st , 2025 , provide the tenant name and the system owning agency/component for each tenant, following CISA reporting instructions. Update this inventory in the first quarter annually, following CISA reporting instructions. Deploy all SCuBA assessment tools for in-scope cloud tenants no later than Friday, April 25 th , 2025, and begin continuous reporting on the requirements of this Directive through one of the following methods: Integrate the tool results feeds with CISA’s continuous monitoring solution to enable automated reporting. OR Manually report the results of the most recent SCuBA assessment tool version to CISA quarterly in a CISA approved, machine-readable format, following CISA reporting instructions. Implement all mandatory SCuBA policies effective as of this Directive’s issuance, as set forth in the CISA-managed Binding Operational Directive 25-01 Required Configurations website no later than Friday, June 20 th , 2025 . These mandatory SCuBA policies are noted on the Required Configurations website and correspond to the mandatory policies referenced within the SCuBA Secure Configuration Baselines. Implement all future updates to mandatory SCuBA policies in accordance with the timelines set forth in the CISA-managed Binding Operational Directive 25-01 Required Configurations website . Implement all mandatory SCuBA Secure Configuration Baselines and begin continuous monitoring for new cloud tenants prior to granting an Authorization to Operate (ATO). Agency Authorizing Officials (AOs), in accordance with applicable agency policy, may accept risk for deviations from the mandatory SCuBA policies to account for operational needs. Agencies shall identify and explain deviations in the output of the SCuBA assessment tools when reported to CISA. For more information regarding this process, review the following and coordinate with CISA via CyberDirectives@mail.cisa.dhs.gov . CISA Actions: Maintain and update a detailed list of in-scope policies at Binding Operational Directive 25-01 Required Configurations website . Provide agencies with official email notification of changes to the mandatory policies on the Binding Operational Directive 25-01 Required Configurations website and in the SCuBA Secure Configuration Baselines. Provide agencies with reporting instructions for Directive requirements. Provide agencies with instructions on implementing and integrating the software and solutions identified within this Directive at the time of issuance. Provide troubleshooting support and assistance to the FCEB for installation and implementation of SCuBA assessment tools. Provide CDM-based reporting on Directive compliance to agencies that elect to integrate with CISA’s continuous monitoring infrastructure. Provide support to agencies manually reporting the results of the SCuBA assessment tool. Promptly review and resolve any deviations submitted by agency AOs. Within one year of Directive issuance, assess agency progress and submit a status report to the Secretary of Homeland Security, the Director of the Office of Management and Budget (OMB), and the National Cyber Director outlining performance indicators, lingering issues, and cross-agency status in implementing the Directive. Additional Information Visit https://cisa.gov/news-events/directives or contact CyberDirectives@mail.cisa.dhs.gov for general information, assistance, and reporting. Subscribe to SCuBA Email Updates Stay up-to-date with the latest SCuBA updates. scuba email notifications SUBSCription Tags Topics : Cybersecurity Best Practices Related Directives Jun 10, 2026 Binding Operational Directive BOD 26-04: Implementation Guidance for Prioritizing Security Updates Based on Risk Jun 10, 2026 Binding Operational Directive BOD 26-04: Prioritizing Security Updates Based on Risk Jun 10, 2026 Binding Operational Directive BOD 19-02: Vulnerability Remediation Requirements for Internet-Accessible Systems (Revoked) Jun 10, 2026 Binding Operational Directive BOD 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities (Revoked) Return to top Topics Spotlight Resources &amp; Tools News &amp; Events Careers About Cybersecurity &amp; Infrastructure Security Agency Facebook X LinkedIn YouTube Instagram RSS CISA Central 1-844-Say-CISA contact@cisa.dhs.gov DHS Seal CISA.gov An official website of the U.S. Department of Homeland Security About CISA Budget and Performance DHS.gov FOIA Requests No FEAR Act Office of Inspector General Privacy Policy Subscribe The White House USA.gov Website Feedback",
     "changeHistory": [
       {
         "date": "2026-07-02",
         "description": "Seeded from the CISA directive index and official directive page."
+      },
+      {
+        "date": "2026-07-02",
+        "description": "Updated with specific deadlines (Feb 21, Apr 25, Jun 20, 2025) and reporting requirements extracted from 'Required Actions' section."
       }
     ]
   },
@@ -175,13 +311,18 @@
       "Critical infrastructure",
       "Other organizations"
     ],
-    "topics": ["Risk management", "Critical infrastructure"],
+    "topics": [
+      "Risk management",
+      "Critical infrastructure"
+    ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
     "sourceUrls": [
       "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
     ],
-    "sourceLocators": ["Abstract"],
+    "sourceLocators": [
+      "Abstract"
+    ],
     "relatedDocuments": [],
     "supersedes": [],
     "supersededBy": [],
@@ -214,7 +355,9 @@
     "requirements": [],
     "deadlines": [],
     "applicability": "Federal agencies implementing Zero Trust; the maturity model itself is guidance.",
-    "affectedOrganizations": ["Federal agencies"],
+    "affectedOrganizations": [
+      "Federal agencies"
+    ],
     "topics": [
       "Zero Trust",
       "Identity and access management",
@@ -230,8 +373,14 @@
     "sourceUrls": [
       "https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf"
     ],
-    "sourceLocators": ["Cover", "Maturity Model Overview"],
-    "relatedDocuments": ["omb-m-22-09", "nist-sp-800-207"],
+    "sourceLocators": [
+      "Cover",
+      "Maturity Model Overview"
+    ],
+    "relatedDocuments": [
+      "omb-m-22-09",
+      "nist-sp-800-207"
+    ],
     "supersedes": [],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
@@ -257,38 +406,81 @@
     "status": "active",
     "summary": "Requires covered agencies to improve asset discovery and vulnerability enumeration capabilities and related reporting to CISA.",
     "executiveHighlights": [
-      "Establishes measurable asset discovery and vulnerability enumeration performance requirements."
+      "Establishes measurable asset discovery and vulnerability enumeration performance requirements.",
+      "Mandates automated asset discovery every 7 days and vulnerability enumeration every 14 days.",
+      "Requires on-demand discovery initiation within 72 hours of a CISA request."
     ],
     "requirements": [
-      "Perform automated asset discovery at least every seven days.",
-      "Initiate on-demand discovery within 72 hours of a CISA request and provide available results within seven days."
+      "Perform automated asset discovery every 7 days covering the entire IPv4 space used by the agency.",
+      "Initiate vulnerability enumeration across all discovered assets, including nomadic/roaming devices, every 14 days.",
+      "Conduct vulnerability enumeration on managed endpoints and network devices with privileged credentials where available.",
+      "Update all vulnerability detection signatures at an interval no greater than 24 hours from the last vendor-released signature update.",
+      "Initiate automated ingestion of vulnerability enumeration results into the CDM Agency Dashboard within 72 hours of discovery completion.",
+      "Develop and maintain the operational capability to initiate on-demand asset discovery and vulnerability enumeration within 72 hours of receiving a request from CISA and provide available results within 7 days.",
+      "Initiate collection and reporting of vulnerability enumeration performance data to the CDM Dashboard within 6 months of CISA publishing requirements."
     ],
     "deadlines": [
       {
+        "date": "2023-04-03",
+        "label": "Initial compliance deadline for required actions",
+        "status": "completed"
+      },
+      {
         "date": null,
-        "label": "Recurring and request-based deadlines apply; verify current implementation guidance.",
+        "label": "Recurring: Asset discovery every 7 days; Vulnerability enumeration every 14 days",
+        "status": "ongoing"
+      },
+      {
+        "date": null,
+        "label": "On-demand: Initiate discovery within 72 hours of CISA request; provide results within 7 days",
+        "status": "ongoing"
+      },
+      {
+        "date": null,
+        "label": "Reporting: Progress reports due 6, 12, and 18 months after issuance",
         "status": "ongoing"
       }
     ],
-    "applicability": "Federal Civilian Executive Branch systems; statutory exclusions apply.",
-    "affectedOrganizations": ["Federal civilian executive branch agencies"],
-    "topics": ["Vulnerability management", "Endpoint detection and response"],
+    "applicability": "Federal Civilian Executive Branch (FCEB) unclassified federal information systems; excludes statutorily defined 'national security systems' and certain DoD/Intelligence Community systems.",
+    "affectedOrganizations": [
+      "Federal civilian executive branch agencies"
+    ],
+    "topics": [
+      "Vulnerability management",
+      "Asset discovery",
+      "Endpoint detection and response",
+      "Continuous Diagnostics and Mitigation (CDM)"
+    ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
     "sourceUrls": [
       "https://www.cisa.gov/news-events/directives/bod-23-01-improving-asset-visibility-and-vulnerability-detection-federal-networks"
     ],
-    "sourceLocators": ["Required Actions"],
-    "relatedDocuments": [],
+    "sourceLocators": [
+      "Required Actions",
+      "Scope",
+      "Reporting Requirements and Metrics"
+    ],
+    "relatedDocuments": [
+      "Executive Order 14028",
+      "OMB M-21-02",
+      "OMB M-22-05",
+      "OMB M-22-09",
+      "BOD 22-01"
+    ],
     "supersedes": [],
     "supersededBy": [],
-    "verifiedAt": "2026-07-02",
-    "contentHash": "1dabb837c1680de0476a85f69c4673837be119bddddf747f96250ff39ef99e3d",
-    "extractedText": "The directive focuses on asset discovery and vulnerability enumeration. Agencies must initiate on-demand asset discovery within 72 hours of a CISA request and provide available results within 7 days.",
+    "verifiedAt": "2026-10-06",
+    "contentHash": "92be447e1c6fce926fa970d3d1b17824029cbb3904fadc3894150b99c0bbfbea",
+    "extractedText": "BOD 23-01: Improving Asset Visibility and Vulnerability Detection on Federal Networks | CISA Skip to main content An official website of the United States government Here’s how you know Here’s how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock A locked padlock ) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites. Staying Secure at Events no-cost Cyber Services Cybersecurity Awareness Month KEV Catalog Report A Cyber Issue Search Menu Close Topics Topics Cybersecurity Best Practices Cyber Threats and Response Critical Infrastructure Security and Resilience Election Security Emergency Communications Industrial Control Systems Information and Communications Technology Supply Chain Security Partnerships and Collaboration Physical Security Risk Management How can we help? Government Educational Institutions Industry State, Local, Tribal, and Territorial Individuals and Families Small and Medium Businesses Find Help Locally Faith-Based Community Executives High-Risk Communities Spotlight Resources &amp; Tools Resources &amp; Tools All Resources &amp; Tools Services Programs Resources Training Groups News &amp; Events News &amp; Events Directives News Events Cybersecurity Alerts &amp; Advisories Request a CISA Speaker Congressional Testimony CISA Conferences CISA Live! Careers Careers Benefits &amp; Perks Hiring and Recruitment New Employee Orientation &amp; Onboarding Students &amp; Recent Graduates Veteran and Military Spouses About About Divisions &amp; Offices Regions Leadership Doing Business with CISA Site Links CISA GitHub CISA Central Contact Us Subscribe Transparency and Accountability Policies &amp; Plans Staying Secure at Events no-cost Cyber Services Cybersecurity Awareness Month KEV Catalog Report A Cyber Issue Breadcrumb Home News &amp; Events Cybersecurity Directives BOD 23-01: Improving Asset Visibility and Vulnerability Detection on Federal Networks Share: Opens in a new window Opens in a new window Opens in a new window Binding Operational Directives BOD 23-01: Improving Asset Visibility and Vulnerability Detection on Federal Networks October 03, 2022 Related topics: Cybersecurity Best Practices News &amp; Events Directives News Events Cybersecurity Alerts &amp; Advisories Request a CISA Speaker Congressional Testimony CISA Conferences CISA Live! This page contains a web-friendly version of the Cybersecurity and Infrastructure Security Agency’s Binding Operational Directive 23-01 - Improving Asset Visibility and Vulnerability Detection on Federal Networks. A binding operational directive is a compulsory direction to federal, executive branch, departments and agencies for purposes of safeguarding federal information and information systems. 44 U.S.C. § 3552(b)(1). Section 3553(b)(2) of title 44, U.S. Code, authorizes the Secretary of the Department of Homeland Security (DHS) to develop and oversee the implementation of binding operational directives. Federal agencies are required to comply with these directives. 44 U.S.C. § 3554(a)(1)(B)(ii). These directives do not apply to statutorily defined “national security systems” or to certain systems operated by the Department of Defense or the Intelligence Community. 44 U.S.C. § 3553(b), (d), (e)(2), (e)(3) . This directive refers to the systems to which it applies as “Federal Civilian Executive Branch” systems, and to agencies operating those systems as “Federal Civilian Executive Branch” agencies. Background Continuous and comprehensive asset visibility is a basic pre-condition for any organization to effectively manage cybersecurity risk. Accurate and up-to-date accounting of assets residing on federal networks is also critical for CISA to effectively manage cybersecurity for the Federal Civilian Executive Branch (FCEB) enterprise. The purpose of this Binding Operational Directive is to make measurable progress toward enhancing visibility into agency assets and associated vulnerabilities. While the requirements in this Directive are not sufficient for comprehensive, modern cyber defense operations, they are an important step to address current visibility challenges at the component, agency, and FCEB enterprise level. The requirements of this Directive focus on two core activities essential to improving operational visibility for a successful cybersecurity program: asset discovery and vulnerability enumeration. Asset discovery is a building block of operational visibility, and it is defined as an activity through which an organization identifies what network addressable IP-assets reside on their networks and identifies the associated IP addresses (hosts). Asset discovery is non-intrusive and usually does not require special logical access privileges. Vulnerability enumeration identifies and reports suspected vulnerabilities on those assets. It detects host attributes (e.g., operating systems, applications, open ports, etc.), and attempts to identify outdated software versions, missing updates, and misconfigurations. It validates compliance with or deviations from security policies by identifying host attributes and matching them with information on known vulnerabilities. Understanding an asset's vulnerability posture is dependent on having appropriate privileges, which can be achieved through credentialed network-based scans or a client installed on the host endpoint. Discovery of assets and vulnerabilities can be achieved through a variety of means, including active scanning, passive flow monitoring, querying logs, or in the case of software defined infrastructure, API query. Many agencies' existing Continuous Diagnostics and Mitigation (CDM) implementations leverage such means to make progress toward intended levels of visibility. Asset visibility is not an end in itself, but is necessary for update s , configuration management, and other security and lifecycle management activities that significantly reduce cybersecurity risk, along with exigent activities like vulnerability remediation. The goal of this Directive is for agencies to comprehensively achieve the following outcomes without prescribing how to do so : Maintain an up-to-date inventory of networked assets as defined in the scope of this directive; Identify software vulnerabilities, using privileged or client-based means where technically feasible; Track how often the agency enumerates its assets, what coverage of its assets it achieves, and how current its vulnerability signatures are; and Provide asset and vulnerability information to CISA's CDM Federal Dashboard. Agencies may request CISA's assistance in conducting an engineering survey to baseline current asset management capabilities. CISA will work with requesting agencies to provide technical and program assistance to resolve gaps, optimize scanning, and support achieving the required actions in this Directive. This Directive's requirements advance the priorities set forth in the Executive Order 14028 on Improving the Nation's Cybersecurity, specifically Sec. 7 (Improving Detection of Cybersecurity Vulnerabilities and Incidents on Federal Government Networks), and provide operational clarity in achieving policy set forth in previous OMB Memoranda, including M-21-02, M-22-05, and M-22-09. Compliance with this Directive also supports BOD 22-01, Managing Unacceptable Risk Vulnerabilities in Federal Enterprise , as it will enable agencies to enhance the management of known exploited vulnerabilities that can be detected using automated tools. Scope These required actions apply to any FCEB unclassified federal information system, including any federal information system used or operated by another entity on behalf of an agency, that collects, processes, stores, transmits, disseminates, or otherwise maintains agency information. This Directive applies to all IP-addressable networked assets that can be reached over IPv4 and IPv6 protocols. For the purpose of this directive, an IP-addressable networked asset is defined as any reportable (i.e., non-ephemeral) information technology or operational technology asset that is assigned an IPv4 or IPv6 address and accessible over IPv4 or IPv6 networks, regardless of the environment it operates in. The scope includes, but is not limited to, servers and workstations, virtual machines, routers and switches, firewalls, network appliances, and network printers — whether in on-premises, roaming, and cloud operated deployment models. The scope excludes ephemeral assets, such as containers and third-party-managed software as a service (SaaS) solutions. Required Actions By April 3, 2023 , all FCEB agencies are required to take the following actions on all federal information systems in scope of this directive: Perform automated asset discovery every 7 days. While many methods and technologies can be used to accomplish this task, at minimum this discovery must cover the entire IPv4 space used by the agency. Initiate vulnerability enumeration across all discovered assets, including all discovered nomadic/roaming devices (e.g., laptops), every 14 days. CISA understands that in some instances achieving full vulnerability discovery on the entire enterprise may not complete in 14 days. Enumeration processes should still be initiated at regular intervals to ensure all systems within the enterprise are scanned on a regular cadence within this window. To the maximum extent possible and where available technologies support it, all vulnerability enumeration performed on managed endpoints (e.g., servers, workstations, desktops, laptops) and managed network devices (e.g., routers, switches, firewalls) must be conducted with privileged credentials (for the purpose of this directive, both network-based credentialed scans and client- or agent-based vulnerability detection methods are viewed as meeting this requirement). All vulnerability detection signatures used must be updated at an interval no greater than 24 hours from the last vendor-released signature update. Where the capability is available, agencies must perform the same type of vulnerability enumeration on mobile devices (e.g., iOS and Android) and other devices that reside outside of agency on-premises networks. All alternative asset discovery and vulnerability enumeration methods (e.g., for systems with specialized equipment or those unable to utilize privileged credentials) must be approved by CISA. Initiate automated ingestion of vulnerability enumeration results (i.e., detected vulnerabilities) into the CDM Agency Dashboard within 72 hours of discovery completion (or initiation of a new discovery cycle if previous full discovery has not been completed). Develop and maintain the operational capability to initiate on-demand asset discovery and vulnerability enumeration to identify specific assets or subsets of vulnerabilities within 72 hours of receiving a request from CISA and provide the available results to CISA within 7 days of request. CISA understands that in some instances agencies may not be able to complete a full vulnerability discovery on the entire enterprise within this period. It is still necessary to initiate the enumeration process within this time period as any available results will provide CISA and agencies situational awareness in response to imminent threats. Within 6 months of CISA publishing requirements for vulnerability enumeration performance data , all FCEB agencies are required to initiate the collection and reporting of vulnerability enumeration performance data, as relevant to this directive, to the CDM Dashboard. This data will allow for CISA to automate oversight and monitoring of agency scanning performance including the measurement of scanning cadence, rigor, and completeness. By April 3, 2023 , agencies and CISA, through the CDM program, will deploy an updated CDM Dashboard configuration that enables access to object-level vulnerability enumeration data for CISA analysts, as authorized in the Executive Order on Improving the Nation’s Cybersecurity. Reporting Requirements and Metrics Six, twelve, and eighteen months after the issuance , FCEB agencies will either: (1) Provide CISA (through a reporting interface in CyberScope) a progress report to include any obstacles, dependencies, or other issues that may prevent them from meeting the directive requirements and expected completion dates, OR (2) Work with CISA through the CDM program review process outlined in OMB M-22-05, or superseding guidance, to identify and resolve gaps or issues that prevent full operationalization of asset management capabilities, including those requirements in this directive. CISA Actions Within 6 months of issuance , CISA will publish data requirements for agencies to provide machine-level vulnerability enumeration performance data in a common data schema. Binding Operational Directive 23-01 Common Data Schema (XLSX, 19.22 KB ) Within 18 months of issuance , CISA will review this directive to ensure the requirements remain relevant to the cybersecurity landscape. Annually , by the end of each fiscal year, CISA will provide a status report to the Secretary of Homeland Security, the Director of OMB, and the National Cyber Director identifying cross-agency status, agency asset discovery and vulnerability management performance indicators, and outstanding issues in implementation of this Directive (scanning performance monitoring data, including the measurement of scanning cadence, rigor, and completeness). Additionally, CISA will report quarterly progress to OMB. CISA will monitor agency compliance with this Directive and will provide assistance upon request to support agency implementation. Implementation Guidance The purpose of the Implementation Guidance document is to help federal agencies interpret and implement CISA’s Binding Operational Directive (BOD) 23-01. While the primary audience for this document is Federal Civilian Executive Branch (FCEB) agencies, other entities may find the content useful. At a minimum, CISA expects FCEB agencies to meet or exceed the guidance in this document. The guidance seeks to answer the most common questions asked by federal agencies. CISA will update this document with commonly asked questions and as new information becomes available. Resources and Contact Information General information, assistance, and reporting – cyberdirectives@mail.cisa.dhs.gov . Tags Topics : Cybersecurity Best Practices Related Directives Jun 10, 2026 Binding Operational Directive BOD 26-04: Implementation Guidance for Prioritizing Security Updates Based on Risk Jun 10, 2026 Binding Operational Directive BOD 26-04: Prioritizing Security Updates Based on Risk Jun 10, 2026 Binding Operational Directive BOD 19-02: Vulnerability Remediation Requirements for Internet-Accessible Systems (Revoked) Jun 10, 2026 Binding Operational Directive BOD 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities (Revoked) Return to top Topics Spotlight Resources &amp; Tools News &amp; Events Careers About Cybersecurity &amp; Infrastructure Security Agency Facebook X LinkedIn YouTube Instagram RSS CISA Central 1-844-Say-CISA contact@cisa.dhs.gov DHS Seal CISA.gov An official website of the U.S. Department of Homeland Security About CISA Budget and Performance DHS.gov FOIA Requests No FEAR Act Office of Inspector General Privacy Policy Subscribe The White House USA.gov Website Feedback",
     "changeHistory": [
       {
         "date": "2026-07-02",
         "description": "Seeded from the official CISA web version."
+      },
+      {
+        "date": "2026-07-02",
+        "description": "Updated requirements list to reflect specific cadence (7 days/14 days) and credentialing mandates found in source text."
       }
     ]
   },
@@ -322,8 +514,12 @@
     ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
-    "sourceUrls": ["https://csrc.nist.gov/pubs/sp/800/218/final"],
-    "sourceLocators": ["Abstract"],
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/218/final"
+    ],
+    "sourceLocators": [
+      "Abstract"
+    ],
     "relatedDocuments": [],
     "supersedes": [],
     "supersededBy": [],
@@ -366,7 +562,9 @@
       }
     ],
     "applicability": "Federal civilian executive branch agencies, subject to the memorandum's scope and exceptions.",
-    "affectedOrganizations": ["Federal civilian executive branch agencies"],
+    "affectedOrganizations": [
+      "Federal civilian executive branch agencies"
+    ],
     "topics": [
       "Zero Trust",
       "Identity and access management",
@@ -385,8 +583,14 @@
     "sourceUrls": [
       "https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf"
     ],
-    "sourceLocators": ["Page 4", "Section III"],
-    "relatedDocuments": ["cisa-ztmm-v2", "nist-sp-800-207"],
+    "sourceLocators": [
+      "Page 4",
+      "Section III"
+    ],
+    "relatedDocuments": [
+      "cisa-ztmm-v2",
+      "nist-sp-800-207"
+    ],
     "supersedes": [],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
@@ -418,17 +622,26 @@
     "requirements": [],
     "deadlines": [],
     "applicability": "Historical requirements for federal agencies; no longer current after rescission.",
-    "affectedOrganizations": ["Federal agencies"],
-    "topics": ["Logging", "Incident response"],
+    "affectedOrganizations": [
+      "Federal agencies"
+    ],
+    "topics": [
+      "Logging",
+      "Incident response"
+    ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
     "sourceUrls": [
       "https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf"
     ],
-    "sourceLocators": ["Appendix A"],
+    "sourceLocators": [
+      "Appendix A"
+    ],
     "relatedDocuments": [],
     "supersedes": [],
-    "supersededBy": ["omb-m-26-14"],
+    "supersededBy": [
+      "omb-m-26-14"
+    ],
     "verifiedAt": "2026-07-02",
     "contentHash": "eddb4ac590d5ba3411f84e714207b715644891f44478efd693f6f73298006b69",
     "extractedText": "M-21-31 established event logging maturity requirements. Effective immediately, OMB Memorandum M-21-31 is rescinded by M-26-14.",
@@ -457,7 +670,10 @@
     "requirements": [],
     "deadlines": [],
     "applicability": "Enterprises considering Zero Trust architecture; this publication is guidance, not a universal mandate.",
-    "affectedOrganizations": ["Federal agencies", "Other organizations"],
+    "affectedOrganizations": [
+      "Federal agencies",
+      "Other organizations"
+    ],
     "topics": [
       "Zero Trust",
       "Identity and access management",
@@ -470,9 +686,16 @@
         "locator": "Abstract"
       }
     ],
-    "sourceUrls": ["https://csrc.nist.gov/pubs/sp/800/207/final"],
-    "sourceLocators": ["Abstract"],
-    "relatedDocuments": ["omb-m-22-09", "cisa-ztmm-v2"],
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/207/final"
+    ],
+    "sourceLocators": [
+      "Abstract"
+    ],
+    "relatedDocuments": [
+      "omb-m-22-09",
+      "cisa-ztmm-v2"
+    ],
     "supersedes": [],
     "supersededBy": [],
     "verifiedAt": "2026-07-02",
@@ -506,12 +729,21 @@
     ],
     "deadlines": [],
     "applicability": "Federal executive branch departments and agencies except statutory and listed exclusions.",
-    "affectedOrganizations": ["Federal civilian executive branch agencies"],
-    "topics": ["Vulnerability management", "Secure software development"],
+    "affectedOrganizations": [
+      "Federal civilian executive branch agencies"
+    ],
+    "topics": [
+      "Vulnerability management",
+      "Secure software development"
+    ],
     "zeroTrust": false,
     "zeroTrustExcerpts": [],
-    "sourceUrls": ["https://www.cisa.gov/sites/default/files/bod-20-01.pdf"],
-    "sourceLocators": ["Required Actions"],
+    "sourceUrls": [
+      "https://www.cisa.gov/sites/default/files/bod-20-01.pdf"
+    ],
+    "sourceLocators": [
+      "Required Actions"
+    ],
     "relatedDocuments": [],
     "supersedes": [],
     "supersededBy": [],
@@ -571,7 +803,9 @@
       }
     ],
     "applicability": "Executive departments and agencies covered by the memorandum; national security systems are excluded.",
-    "affectedOrganizations": ["Federal agencies"],
+    "affectedOrganizations": [
+      "Federal agencies"
+    ],
     "topics": [
       "Post-quantum cryptography",
       "Encryption",
@@ -606,6 +840,337 @@
       {
         "date": "2026-07-02",
         "description": "Seeded and verified against the official OMB PDF after discovery regression analysis."
+      }
+    ]
+  },
+  {
+    "id": "ED 26-03",
+    "slug": "v1-ed-26-03-mitigate-vulnerabilities-cisco-sd-wan-systems",
+    "title": "V1: ED 26-03: Mitigate Vulnerabilities in Cisco SD-WAN Systems",
+    "identifier": "ED 26-03",
+    "issuingAuthority": "CISA",
+    "documentType": "Emergency Directive",
+    "authorityLevel": "binding-requirement",
+    "publicationDate": "2026-03-11",
+    "effectiveDate": "2026-03-11",
+    "status": "active",
+    "summary": "Supersedes Emergency Directive 26-03; requires federal agencies to identify, collect artifacts, update, hunt, harden, and report on Cisco SD-WAN systems.",
+    "executiveHighlights": [
+      "Applies to all federal information systems managed on agency networks or hosted by third parties on an agency's behalf.",
+      "Does not apply to statutorily defined 'national security systems' nor to systems operated by the Department of War or the Intelligence Community.",
+      "Federal agencies are required to comply with these directives."
+    ],
+    "requirements": [
+      "Identify all in-scope Cisco SD-WAN systems and provide inventory to CISA by 11:59 PM ET on February 26, 2026.",
+      "Collect artifacts including admin tech dumps, /home directory copies, syslogs, and forensic snapshots by 11:59 PM ET on February 26, 2026.",
+      "Provide all syslog logging for Cisco SD-WAN devices to CISA's CLAW program by 11:59 PM ET on March 23, 2026.",
+      "Apply Cisco provided updates to all identified CVEs by 5:00 PM ET February 27, 2026.",
+      "Follow Hunt Guidance; report indications of compromise immediately if root account compromise is identified.",
+      "Follow Hardening Guidance as outlined in Supplemental Direction ED 26-03.",
+      "Submit multiple reports to CISA by specified deadlines (Feb 26, Mar 5, Mar 12, Mar 23, 2026)."
+    ],
+    "deadlines": [
+      {
+        "date": "2026-02-26",
+        "label": "Inventory and Artifact Collection",
+        "status": "completed"
+      },
+      {
+        "date": "2026-02-27",
+        "label": "Apply Updates",
+        "status": "completed"
+      },
+      {
+        "date": "2026-03-05",
+        "label": "Detailed Inventory and Actions Report",
+        "status": "completed"
+      },
+      {
+        "date": "2026-03-12",
+        "label": "Hardening Actions Report",
+        "status": "completed"
+      },
+      {
+        "date": "2026-03-23",
+        "label": "Log Provisioning Report",
+        "status": "completed"
+      }
+    ],
+    "applicability": "All federal information systems managed on agency networks or hosted by third parties on an agency's behalf.",
+    "affectedOrganizations": [
+      "Federal agencies",
+      "FCEB agencies"
+    ],
+    "topics": [
+      "Cybersecurity Best Practices",
+      "Directives",
+      "News & Events"
+    ],
+    "zeroTrust": false,
+    "zeroTrustExcerpts": [],
+    "sourceUrls": [
+      "https://www.cisa.gov/news-events/directives/v1-ed-26-03-mitigate-vulnerabilities-cisco-sd-wan-systems"
+    ],
+    "sourceLocators": [
+      "Section 3553(h) of title 44, U.S. Code",
+      "Sections 2202(c)(3) and 2205(3) of the Homeland Security Act of 2002",
+      "44 U.S.C. § 3554 (a)(1)(B)(v)",
+      "44 U.S.C. § 3553(d), (e)(2), (e)(3), (h)(1)(B)"
+    ],
+    "relatedDocuments": [
+      "ED 26-03: Mitigate Vulnerabilities in Cisco SD-WAN Systems (Original)",
+      "Supplemental Direction ED 26-03: Hunt & Hardening Guidance for Cisco SD-WAN Systems",
+      "V1: ED 25-03: Identify and Mitigate Potential Compromise of Cisco Devices",
+      "ED 24-02: Mitigating the Significant Risk from Nation-State Compromise of Microsoft Corporate Email System (Closed)"
+    ],
+    "supersedes": [
+      "ED 26-03"
+    ],
+    "supersededBy": [],
+    "verifiedAt": "2026-10-06",
+    "contentHash": "6e5f2c588b47fa99580663c595150262d3f733721be743e5786b646475ab3eda",
+    "extractedText": "V1: ED 26-03: Mitigate Vulnerabilities in Cisco SD-WAN Systems | CISA Skip to main content An official website of the United States government Here’s how you know Here’s how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock A locked padlock ) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites. Staying Secure at Events no-cost Cyber Services Cybersecurity Awareness Month KEV Catalog Report A Cyber Issue Search Menu Close Topics Topics Cybersecurity Best Practices Cyber Threats and Response Critical Infrastructure Security and Resilience Election Security Emergency Communications Industrial Control Systems Information and Communications Technology Supply Chain Security Partnerships and Collaboration Physical Security Risk Management How can we help? Government Educational Institutions Industry State, Local, Tribal, and Territorial Individuals and Families Small and Medium Businesses Find Help Locally Faith-Based Community Executives High-Risk Communities Spotlight Resources &amp; Tools Resources &amp; Tools All Resources &amp; Tools Services Programs Resources Training Groups News &amp; Events News &amp; Events Directives News Events Cybersecurity Alerts &amp; Advisories Request a CISA Speaker Congressional Testimony CISA Conferences CISA Live! Careers Careers Benefits &amp; Perks Hiring and Recruitment New Employee Orientation &amp; Onboarding Students &amp; Recent Graduates Veteran and Military Spouses About About Divisions &amp; Offices Regions Leadership Doing Business with CISA Site Links CISA GitHub CISA Central Contact Us Subscribe Transparency and Accountability Policies &amp; Plans Staying Secure at Events no-cost Cyber Services Cybersecurity Awareness Month KEV Catalog Report A Cyber Issue Breadcrumb Home News &amp; Events Cybersecurity Directives V1: ED 26-03: Mitigate Vulnerabilities in Cisco SD-WAN Systems Share: Opens in a new window Opens in a new window Opens in a new window Emergency Directives V1: ED 26-03: Mitigate Vulnerabilities in Cisco SD-WAN Systems March 11, 2026 Related topics: Cybersecurity Best Practices News &amp; Events Directives News Events Cybersecurity Alerts &amp; Advisories Request a CISA Speaker Congressional Testimony CISA Conferences CISA Live! Section 3553(h) of title 44, U.S. Code, authorizes the Secretary of Homeland Security, in response to a known or reasonably suspected information security threat, vulnerability, or incident that represents a substantial threat to the information security of an agency, to “issue an emergency directive to the head of an agency to take any lawful action with respect to the operation of the information system, including such systems used or operated by another entity on behalf of an agency, that collects, processes, stores, transmits, disseminates, or otherwise maintains agency information, for the purpose of protecting the information system from, or mitigating, an information security threat.” 44 U.S.C. § 3553(h)(1)–(2). Sections 2202(c)(3) and 2205(3) of the Homeland Security Act of 2002, as amended, delegate this authority to the Director of the Cybersecurity and Infrastructure Security Agency. 6 U.S.C. §§ 652(c)(3), 655(3). Federal agencies are required to comply with these directives. 44 U.S.C. § 3554 (a)(1)(B)(v). These directives do not apply to statutorily defined “national security systems” nor to systems operated by the Department of War or the Intelligence Community. 44 U.S.C. § 3553(d), (e)(2), (e)(3), (h)(1)(B). See Emergency Directive 26-03 for the Original Directive issued on February 25, 2026. Background This V1 supersedes the required actions in Emergency Directive (ED) 26-03: Mitigate Vulnerabilities in Cisco SD-WAN Systems and applies to any federal agency running affected products. This V1 includes updated and new required actions and an additional reporting requirement. Scope This Directive refers to the systems to which it applies as “FCEB systems,” and to agencies operating those systems as “FCEB agencies.” This Directive applies to all federal information systems managed on agency networks or hosted by third parties on an agency’s behalf. This Directive does not apply to contractors, but FCEB agencies may need to modify contracts to comply with the required actions of this Directive. All other provisions specified in this Directive remain applicable. Required Actions This Emergency Directive requires agencies to take the following actions. Please note that these actions MUST be taken in the identified order: Identify Identify all in-scope Cisco SD-WAN systems within your network and provide this inventory to CISA using the CISA-provided template by 11:59 PM ET on February 26, 2026. Collect By 11:59 PM ET on February 26, 2026, complete the following actions: Ensure SD-WANs are configured to store logs externally (outside the SD-WAN technology) and that logs are stored or accessible from a centralized location for detection and response. Collect the following artifacts: An admin tech dump, including portions of the /opt and /var directories, as outlined in Supplemental Direction ED 26-03: Hunt &amp; Hardening Guidance for Cisco SD-WAN Systems . A copy of the /home directory for user activity and keys. Syslogs (stored externally). For On-Prem SD-WAN Solutions: A forensic snapshot of virtual disk/memory. Network logs (firewall, switch, and router) associated with Cisco SD-WAN vManage, vSmart, and vBond appliances. If Off-Prem (cloud) deployments: Contact Cisco and request a forensic snapshot or virtual disk/memory image. Contact Cisco to request AWS logs related to network traffic. By 11:59 PM ET on March 23, 2026, complete the following actions: Provide to CISA, using CISA’s Cloud Logging Aggregation Warehouse (CLAW) program, all syslog logging for Cisco SD-WAN devices (this includes all older, current, and future syslog logs). All agencies with Cisco SD-WAN systems must configure their infrastructure to provide all other applicable cloud logs through CISA's CLAW program. For assistance with this task, agencies should contact CLAWOperationsSupport@cisa.dhs.gov . Update After completing required actions 1 and 2 , apply Cisco provided updates 1 to all of the CVEs identified in this Directive by 5:00 PM ET February 27, 2026. Hunt Follow the steps outlined in the Hunt Guidance section of the Supplemental Direction ED 26-03: Hunt &amp; Hardening Guidance for Cisco SD-WAN Systems. If a root account compromise is identified, organizations must: Immediately report indications of compromise to contact@cisa.dhs.gov . Rebuild control management plane, which will require deploying fresh vManage, vSmart, and vBond instances from patched OVA or qcow2 images and migrate edges to the new infrastructure. Harden Follow the steps outlined in the Hardening Guidance section of the Supplemental Direction ED 26-03: Hunt &amp; Hardening Guidance for Cisco SD-WAN Systems, which clarifies actions from Cisco's hardening guidance . Report All agencies must: By 11:59 PM ET on February 26, 2026, report to CISA (using the provided template) a summary of in-scope products on agency networks, per required action #1 . By 11:59 PM ET on March 5, 2026, report to CISA (using the provided template) a detailed inventory of all in-scope products on agency networks and actions taken and results, including the collection of artifacts, CVE updates, and hunting actions, per required actions #1 , #2 , and #4 . By 11:59 PM ET on March 12, 2026, report to CISA (using the provided template) the actions taken to harden your networks, per required action #5 . By 11:59 PM ET on March 23, 2026, report to CISA (using provided template) the actions taken to provide logs to CISA, per required action #3 . CISA Actions: CISA will provide agencies with a template for reporting agency actions following Directive issuance. CISA will continue efforts to identify instances and potential compromises associated with this threat activity, provide partner notifications, and issue additional guidance, as appropriate. By May 1, 2026, CISA will provide a report to the Secretary of Homeland Security, the National Cyber Director, and the Office of Management and Budget, identifying the implementation of this Directive, including cross-agency status and outstanding issues. Additional Information Visit https://www.cisa.gov/news-events/directives or contact the following for: General information, assistance, and reporting – CyberDirectives@cisa.dhs.gov Reporting indications of compromise – contact@cisa.dhs.gov 1 https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-authbp-qwCX8D4v https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk Tags Topics : Cybersecurity Best Practices Related Directives Apr 23, 2026 Emergency Directive V1: ED 25-03: Identify and Mitigate Potential Compromise of Cisco Devices Feb 25, 2026 Emergency Directive Supplemental Direction ED 26-03: Hunt and Hardening Guidance for Cisco SD-WAN Systems Feb 25, 2026 Emergency Directive ED 26-03: Mitigate Vulnerabilities in Cisco SD-WAN Systems Jan 08, 2026 Emergency Directive ED 24-02: Mitigating the Significant Risk from Nation-State Compromise of Microsoft Corporate Email System (Closed) Return to top Topics Spotlight Resources &amp; Tools News &amp; Events Careers About Cybersecurity &amp; Infrastructure Security Agency Facebook X LinkedIn YouTube Instagram RSS CISA Central 1-844-Say-CISA contact@cisa.dhs.gov DHS Seal CISA.gov An official website of the U.S. Department of Homeland Security About CISA Budget and Performance DHS.gov FOIA Requests No FEAR Act Office of Inspector General Privacy Policy Subscribe The White House USA.gov Website Feedback",
+    "changeHistory": [
+      {
+        "date": "2026-03-11",
+        "description": "Initial extraction of V1: ED 26-03 from CISA source."
+      }
+    ]
+  },
+  {
+    "id": "CSWP 37B",
+    "slug": "automation-of-the-cmvp-april-2025-status-report",
+    "title": "Automation of the NIST Cryptographic Module Validation Program: April 2025 Status Report",
+    "identifier": "CSWP 37B",
+    "issuingAuthority": "NIST",
+    "documentType": "CSWP",
+    "authorityLevel": "supporting-reference",
+    "publicationDate": "2026-09-30",
+    "effectiveDate": null,
+    "status": "active",
+    "summary": "Status update report for the Automated Cryptographic Module Validation Project (ACMVP) describing progress between September 2024 and April 2025. Authoritative implementation guidance will be published separately in the NIST Special Publication (SP) 1800 series.",
+    "executiveHighlights": [
+      "Describes progress made between September 2024 and April 2025 and planned next steps for the ACMVP.",
+      "Outlines progress across the Test Evidence (TE) Workstream, the Protocol Workstream, and the Research Infrastructure Workstream.",
+      "Authoritative implementation guidance will be published separately in the NIST Special Publication (SP) 1800 series."
+    ],
+    "requirements": [],
+    "deadlines": [],
+    "applicability": "Cryptographic Module Validation Program (CMVP) stakeholders and the Automated Cryptographic Module Validation Project (ACMVP).",
+    "affectedOrganizations": [
+      "NIST",
+      "NCCoE"
+    ],
+    "topics": [
+      "Security and Privacy",
+      "cryptography",
+      "security automation",
+      "testing & validation"
+    ],
+    "zeroTrust": false,
+    "zeroTrustExcerpts": [],
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/cswp/37/b/automation-of-the-cmvp-april-2025-status-report/final"
+    ],
+    "sourceLocators": [
+      "Abstract",
+      "Document History"
+    ],
+    "relatedDocuments": [
+      "CSWP 37A"
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "verifiedAt": "2026-10-06",
+    "contentHash": "342a71dc91a815a8b65f6d131cbe09076d73571a964325efea5d1b844927e43d",
+    "extractedText": "CSWP 37B, Automation of the NIST Cryptographic Module Validation Program: April 2025 Status Report | CSRC You are viewing this page in an unauthorized frame window. This is a potential security issue, you are being redirected to https://csrc.nist.gov . You have JavaScript disabled. This site requires JavaScript to be enabled for complete site functionality. An official website of the United States government Here’s how you know Here’s how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock Locked padlock icon ) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites. Search Search CSRC MENU Search Search Projects Publications Expand or Collapse Drafts for Public Comment All Public Drafts Final Pubs FIPS (standards) Special Publications (SP s ) IR (interagency/internal reports) CSWP (cybersecurity white papers) ITL Bulletins Project Descriptions Journal Articles Conference Papers Books Topics Expand or Collapse Security & Privacy Applications Technologies Sectors Laws & Regulations Activities & Products News & Updates Events Glossary About CSRC Expand or Collapse Computer Security Division Cryptographic Technology Software Security Group Hardware Security Group Security Engineering and Risk Management Applied Cybersecurity Division Cybersecurity and Privacy Applications National Cybersecurity Center of Excellence (NCCoE) National Initiative for Cybersecurity Education (NICE) Contact Us Information Technology Laboratory Computer Security Resource Center Publications NIST CSWP 37B Automation of the NIST Cryptographic Module Validation Program: April 2025 Status Report Share to Facebook Share to X Share to LinkedIn Share ia Email Documentation Topics Date Published: September 30, 2026 Author(s) Chris Celi (NIST) , Alexander Calis (NIST) , Murugiah Souppaya (NIST) , William Barker (Strativia) , Karen Kent (Trusted Cyber Annex) , Shawn Geddis (Katalyst) , Raoul Gabiam (MITRE) , Kyle Vitale (MITRE) , Stephan Mueller (atsec) , Yi Mao (atsec) , Barry Fussell (Cisco) , Andrew Karcher (Cisco) , Douglas Boldt (AWS) Abstract The Cryptographic Module Validation Program (CMVP) validates third-party assertions that cryptographic module implementations satisfy the requirements of Federal Information Processing Standards (FIPS) Publication 140-3, Security Requirements for Cryptographic Modules. The current cryptographic module validation process is heavily manual and out of sync with the pace of industry development and deployment of new technology. Thus, the National Institute of Standards and Technology (NIST) National Cybersecurity Center of Excellence (NCCoE) has undertaken the Automated Cryptographic Module Validation Project (ACMVP) to support improvement in the efficiency and timeliness of CMVP operations and processes. The goal is to demonstrate a suite of automated tools and capabilities that make the FIPS 140-3 validation process more efficient and provide higher assurances that test findings reported for modules meet FIPS 140-3 requirements. This is the second status update report for the project, describing progress made between September 2024 and April 2025 and planned next steps. A prior update of work accomplished can be found in the September 2024 status report. Authoritative implementation guidance will be published separately in the NIST Special Publication (SP) 1800 series. This document outlines progress across each of the three workstreams: the Test Evidence (TE) Workstream, the Protocol Workstream, and the Research Infrastructure Workstream. Each has its own scope and focus area. The combined impact of these workstreams will result in improvements to the overall automation of the CMVP. The Cryptographic Module Validation Program (CMVP) validates third-party assertions that cryptographic module implementations satisfy the requirements of Federal Information Processing Standards (FIPS) Publication 140-3, Security Requirements for Cryptographic Modules. The current cryptographic... See full abstract The Cryptographic Module Validation Program (CMVP) validates third-party assertions that cryptographic module implementations satisfy the requirements of Federal Information Processing Standards (FIPS) Publication 140-3, Security Requirements for Cryptographic Modules. The current cryptographic module validation process is heavily manual and out of sync with the pace of industry development and deployment of new technology. Thus, the National Institute of Standards and Technology (NIST) National Cybersecurity Center of Excellence (NCCoE) has undertaken the Automated Cryptographic Module Validation Project (ACMVP) to support improvement in the efficiency and timeliness of CMVP operations and processes. The goal is to demonstrate a suite of automated tools and capabilities that make the FIPS 140-3 validation process more efficient and provide higher assurances that test findings reported for modules meet FIPS 140-3 requirements. This is the second status update report for the project, describing progress made between September 2024 and April 2025 and planned next steps. A prior update of work accomplished can be found in the September 2024 status report. Authoritative implementation guidance will be published separately in the NIST Special Publication (SP) 1800 series. This document outlines progress across each of the three workstreams: the Test Evidence (TE) Workstream, the Protocol Workstream, and the Research Infrastructure Workstream. Each has its own scope and focus area. The combined impact of these workstreams will result in improvements to the overall automation of the CMVP. Hide full abstract Keywords Automated Cryptographic Module Validation Project (ACMVP) ; Cryptographic Module Validation Program (CMVP) ; cryptography ; cryptographic module ; cryptographic module testing ; cryptographic module validation Control Families None selected Documentation Publication: https://doi.org/10.6028/NIST.CSWP.37B Download URL Supplemental Material: Project homepage Publication Parts: CSWP 37A Document History: 09/10/25: CSWP 37B (Draft) 09/30/26: CSWP 37B (Final) Topics Security and Privacy cryptography , security automation , testing &amp; validation HEADQUARTERS 100 Bureau Drive Gaithersburg, MD 20899 X (link is external) facebook (link is external) linkedin (link is external) instagram (link is external) youtube (link is external) rss govdelivery (link is external) Want updates about CSRC and our publications? Subscribe Contact Us | Our Other Offices Send inquiries to [email&#160;protected] Site Privacy Accessibility Privacy Program Copyrights Vulnerability Disclosure No Fear Act Policy FOIA Environmental Policy Scientific Integrity Information Quality Standards Commerce.gov Science.gov USA.gov Vote.gov",
+    "changeHistory": [
+      {
+        "date": "2025-09-10",
+        "description": "CSWP 37B (Draft)"
+      },
+      {
+        "date": "2026-09-30",
+        "description": "CSWP 37B (Final)"
+      }
+    ]
+  },
+  {
+    "id": "SP 1347",
+    "slug": "sp-1347-nist-cybersecurity-framework-2-0-informative-references-quick-start-guide",
+    "title": "NIST Cybersecurity Framework 2.0: Informative References Quick-Start Guide",
+    "identifier": "SP 1347",
+    "issuingAuthority": "NIST",
+    "documentType": "Special Publication",
+    "authorityLevel": "authoritative-guidance",
+    "publicationDate": "2026-08-25",
+    "effectiveDate": "2026-08-25",
+    "status": "active",
+    "summary": "Explains informative references within CSF 2.0, their role in crosswalking documents, and introduces NIST tools for accessing reference data, including AI support.",
+    "executiveHighlights": [
+      "Defines informative references as relationships between elements of different source documents consumable in human- or machine-readable formats.",
+      "Introduces NIST tools: direct download, CSF 2.0 Reference Tool, and Online Informative References Program.",
+      "Includes two sample use cases and an overview of AI tools supporting reference data use."
+    ],
+    "requirements": [],
+    "deadlines": [],
+    "applicability": "Organizations working toward achieving the outcomes of the CSF 2.0.",
+    "affectedOrganizations": [
+      "Organizations utilizing the NIST Cybersecurity Framework 2.0"
+    ],
+    "topics": [
+      "Security and Privacy",
+      "risk management",
+      "cybersecurity framework",
+      "quick-start guides",
+      "reference materials"
+    ],
+    "zeroTrust": false,
+    "zeroTrustExcerpts": [],
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/1347/final"
+    ],
+    "sourceLocators": [
+      "Abstract",
+      "Document History"
+    ],
+    "relatedDocuments": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "verifiedAt": "2026-10-06",
+    "contentHash": "ea15649bca6df668f25dc6f22b901d1f18b46517743f95f4eae97413085bd9e3",
+    "extractedText": "SP 1347, NIST Cybersecurity Framework 2.0: Informative References Quick-Start Guide | CSRC You are viewing this page in an unauthorized frame window. This is a potential security issue, you are being redirected to https://csrc.nist.gov . You have JavaScript disabled. This site requires JavaScript to be enabled for complete site functionality. An official website of the United States government Here’s how you know Here’s how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock Locked padlock icon ) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites. Search Search CSRC MENU Search Search Projects Publications Expand or Collapse Drafts for Public Comment All Public Drafts Final Pubs FIPS (standards) Special Publications (SP s ) IR (interagency/internal reports) CSWP (cybersecurity white papers) ITL Bulletins Project Descriptions Journal Articles Conference Papers Books Topics Expand or Collapse Security & Privacy Applications Technologies Sectors Laws & Regulations Activities & Products News & Updates Events Glossary About CSRC Expand or Collapse Computer Security Division Cryptographic Technology Software Security Group Hardware Security Group Security Engineering and Risk Management Applied Cybersecurity Division Cybersecurity and Privacy Applications National Cybersecurity Center of Excellence (NCCoE) National Initiative for Cybersecurity Education (NICE) Contact Us Information Technology Laboratory Computer Security Resource Center Publications NIST SP 1347 NIST Cybersecurity Framework 2.0: Informative References Quick-Start Guide Share to Facebook Share to X Share to LinkedIn Share ia Email Documentation Topics Date Published: August 2026 Author(s) National Institute of Standards and Technology Abstract Informative References identify relationships between elements of different source documents and can be consumed in human- or machine-readable formats. For example, within the CSF 2.0, each informative reference indicates one or more parts of another document in which readers can find additional information on the topic (known as a crosswalk ). This can be useful as organizations work toward achieving the outcomes of the CSF 2.0. SP 1347, CSF 2.0 Informative References Quick‑Start Guide, explains what informative references are and how they support achieving the outcomes of the CSF 2.0. The guide also introduces readers to NIST tools available for accessing, viewing, and using informative references for cybersecurity risk management, including direct download, the CSF 2.0 Reference Tool, and the Online Informative References Program. The draft contains two sample use cases and provides an overview of how artificial intelligence tools can support reference data use. Informative References identify relationships between elements of different source documents and can be consumed in human- or machine-readable formats. For example, within the CSF 2.0, each informative reference indicates one or more parts of another document in which readers can find additional... See full abstract Informative References identify relationships between elements of different source documents and can be consumed in human- or machine-readable formats. For example, within the CSF 2.0, each informative reference indicates one or more parts of another document in which readers can find additional information on the topic (known as a crosswalk ). This can be useful as organizations work toward achieving the outcomes of the CSF 2.0. SP 1347, CSF 2.0 Informative References Quick‑Start Guide, explains what informative references are and how they support achieving the outcomes of the CSF 2.0. The guide also introduces readers to NIST tools available for accessing, viewing, and using informative references for cybersecurity risk management, including direct download, the CSF 2.0 Reference Tool, and the Online Informative References Program. The draft contains two sample use cases and provides an overview of how artificial intelligence tools can support reference data use. Hide full abstract Keywords NIST Cybersecurity Framework (CSF) 2.0 ; informative references ; mappings ; reference data ; datasets Control Families None selected Documentation Publication: https://doi.org/10.6028/NIST.SP.1347 Download URL Supplemental Material: CSF 2.0 QSGs Document History: 03/23/26: SP 1347 (Draft) 08/25/26: SP 1347 (Final) Topics Security and Privacy risk management Applications cybersecurity framework Activities and Products quick-start guides , reference materials HEADQUARTERS 100 Bureau Drive Gaithersburg, MD 20899 X (link is external) facebook (link is external) linkedin (link is external) instagram (link is external) youtube (link is external) rss govdelivery (link is external) Want updates about CSRC and our publications? Subscribe Contact Us | Our Other Offices Send inquiries to [email&#160;protected] Site Privacy Accessibility Privacy Program Copyrights Vulnerability Disclosure No Fear Act Policy FOIA Environmental Policy Scientific Integrity Information Quality Standards Commerce.gov Science.gov USA.gov Vote.gov",
+    "changeHistory": [
+      {
+        "date": "2026-03-23",
+        "description": "SP 1347 (Draft)"
+      },
+      {
+        "date": "2026-08-25",
+        "description": "SP 1347 (Final)"
+      }
+    ]
+  },
+  {
+    "id": "IR 8576",
+    "slug": "transit-cybersecurity-framework-community-profile",
+    "title": "Transit Cybersecurity Framework Community Profile",
+    "identifier": "IR 8576",
+    "issuingAuthority": "NIST",
+    "documentType": "Interagency/Internal Report (IR)",
+    "authorityLevel": "supporting-reference",
+    "publicationDate": "2026-08-05",
+    "effectiveDate": "2026-08-05",
+    "status": "active",
+    "summary": "A Cybersecurity Framework (CSF) Community Profile developed to support United States-based transit agencies, aligned with sector priorities and best practices.",
+    "executiveHighlights": [
+      "Developed to complement, not replace, existing cybersecurity programs, guidelines, or policies.",
+      "Serves as a guide for prioritizing cybersecurity activities and outcomes.",
+      "Can be used as a starting point for building a new program."
+    ],
+    "requirements": [],
+    "deadlines": [],
+    "applicability": "United States-based transit agencies",
+    "affectedOrganizations": [
+      "Transit agencies",
+      "Bus operators",
+      "Commuter rail operators",
+      "Subway operators"
+    ],
+    "topics": [
+      "Security and Privacy",
+      "Risk Management",
+      "Cyber-physical systems",
+      "Cybersecurity Framework",
+      "Operational Technology",
+      "Transportation"
+    ],
+    "zeroTrust": false,
+    "zeroTrustExcerpts": [],
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/ir/8576/final"
+    ],
+    "sourceLocators": [
+      "Abstract",
+      "Document History"
+    ],
+    "relatedDocuments": [
+      "CSWP 51 (Draft)"
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "verifiedAt": "2026-10-06",
+    "contentHash": "81e36f5e84ca9bce192c97fa6b22447539343e0e29b1171560980e3c8e6d5880",
+    "extractedText": "IR 8576, Transit Cybersecurity Framework Community Profile | CSRC You are viewing this page in an unauthorized frame window. This is a potential security issue, you are being redirected to https://csrc.nist.gov . You have JavaScript disabled. This site requires JavaScript to be enabled for complete site functionality. An official website of the United States government Here’s how you know Here’s how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock Locked padlock icon ) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites. Search Search CSRC MENU Search Search Projects Publications Expand or Collapse Drafts for Public Comment All Public Drafts Final Pubs FIPS (standards) Special Publications (SP s ) IR (interagency/internal reports) CSWP (cybersecurity white papers) ITL Bulletins Project Descriptions Journal Articles Conference Papers Books Topics Expand or Collapse Security & Privacy Applications Technologies Sectors Laws & Regulations Activities & Products News & Updates Events Glossary About CSRC Expand or Collapse Computer Security Division Cryptographic Technology Software Security Group Hardware Security Group Security Engineering and Risk Management Applied Cybersecurity Division Cybersecurity and Privacy Applications National Cybersecurity Center of Excellence (NCCoE) National Initiative for Cybersecurity Education (NICE) Contact Us Information Technology Laboratory Computer Security Resource Center Publications NIST IR 8576 Transit Cybersecurity Framework Community Profile Share to Facebook Share to X Share to LinkedIn Share ia Email Documentation Topics Date Published: August 2026 Author(s) CheeYee Tang (NIST) , Alex Alshtein (MITRE) , Eileen Division (MITRE) , Matt Hardison (MITRE) , Emma Holt (MITRE) , Christina Sames (MITRE) , Hillary Tran (MITRE) Abstract This document is a Cybersecurity Framework (CSF) Community Profile developed to support United States-based transit agencies. This &ldquo;Transit Profile&rdquo; is aligned with transit sector priorities and best practices and can be used as a guide for prioritizing cybersecurity activities and outcomes or as a starting point for building a new program. The Transit Profile was developed to complement, not replace, any existing cybersecurity programs, guidelines, or policies that transit agencies may rely on or have in place. This document is a Cybersecurity Framework (CSF) Community Profile developed to support United States-based transit agencies. This “Transit Profile” is aligned with transit sector priorities and best practices and can be used as a guide for prioritizing cybersecurity activities and outcomes or as a... See full abstract This document is a Cybersecurity Framework (CSF) Community Profile developed to support United States-based transit agencies. This &ldquo;Transit Profile&rdquo; is aligned with transit sector priorities and best practices and can be used as a guide for prioritizing cybersecurity activities and outcomes or as a starting point for building a new program. The Transit Profile was developed to complement, not replace, any existing cybersecurity programs, guidelines, or policies that transit agencies may rely on or have in place. Hide full abstract Keywords bus ; commuter rail ; Cybersecurity Framework (CSF) ; operational technology (OT) ; public transportation ; rail ; risk management ; subway ; transit ; cybersecurity Control Families None selected Documentation Publication: https://doi.org/10.6028/NIST.IR.8576 Download URL Supplemental Material: Project homepage CSF 2.0 Profiles Document History: 08/20/25: CSWP 51 (Draft) 01/22/26: IR 8576 (Draft) 08/05/26: IR 8576 (Final) Topics Security and Privacy risk management Applications cyber-physical systems , cybersecurity framework , operational technology Sectors transportation HEADQUARTERS 100 Bureau Drive Gaithersburg, MD 20899 X (link is external) facebook (link is external) linkedin (link is external) instagram (link is external) youtube (link is external) rss govdelivery (link is external) Want updates about CSRC and our publications? Subscribe Contact Us | Our Other Offices Send inquiries to [email&#160;protected] Site Privacy Accessibility Privacy Program Copyrights Vulnerability Disclosure No Fear Act Policy FOIA Environmental Policy Scientific Integrity Information Quality Standards Commerce.gov Science.gov USA.gov Vote.gov",
+    "changeHistory": [
+      {
+        "date": "2025-08-20",
+        "description": "Draft released as CSWP 51"
+      },
+      {
+        "date": "2026-01-22",
+        "description": "Draft released as IR 8576"
+      },
+      {
+        "date": "2026-08-05",
+        "description": "Final version released as IR 8576"
+      }
+    ]
+  },
+  {
+    "id": "IR 8578",
+    "slug": "ir-8578",
+    "title": "Workshop Summary Report for “Cyber AI Profile” Hybrid Workshop #1",
+    "identifier": "IR 8578",
+    "issuingAuthority": "NIST",
+    "documentType": "Interagency/Internal Report (IR)",
+    "authorityLevel": "supporting-reference",
+    "publicationDate": "2026-08-03",
+    "effectiveDate": null,
+    "status": "active",
+    "summary": "This report summarizes the discussion at the first “Cyber AI Profile Workshop” in April 2025 during which NIST sought feedback toward the development of a NIST Cybersecurity Framework Community Profile for AI. The Cyber AI Profile will provide guidelines for managing cybersecurity risks associated with AI systems and security capabilities.",
+    "executiveHighlights": [
+      "Summarizes discussion from the first “Cyber AI Profile Workshop” held in April 2025.",
+      "Focuses on governance and operational challenges organizations face when adopting AI.",
+      "Builds on comments received in response to the February 2025 Cybersecurity and AI Workshop Concept Paper."
+    ],
+    "requirements": [],
+    "deadlines": [],
+    "applicability": "Organizations adopting AI systems seeking guidelines for managing cybersecurity risks.",
+    "affectedOrganizations": [
+      "Organizations adopting AI systems"
+    ],
+    "topics": [
+      "Artificial Intelligence",
+      "Community Profile",
+      "Cyber AI Profile",
+      "Cybersecurity Framework",
+      "Security and Privacy",
+      "Machine Learning",
+      "Conferences & Workshops"
+    ],
+    "zeroTrust": false,
+    "zeroTrustExcerpts": [],
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/ir/8578/final"
+    ],
+    "sourceLocators": [
+      "IR 8578, Workshop Summary Report for “Cyber AI Profile” Hybrid Workshop #1 | CSRC",
+      "NIST IR 8578 Workshop Summary Report for “Cyber AI Profile” Hybrid Workshop #1"
+    ],
+    "relatedDocuments": [
+      "IR 8596 (Draft)",
+      "IR 8607"
+    ],
+    "supersedes": [],
+    "supersededBy": [],
+    "verifiedAt": "2026-10-06",
+    "contentHash": "5e12e2f35bb0e33c7b84cdbfeb3a3a81a8a6412065632dd9e2302d0dcfdf2abc",
+    "extractedText": "IR 8578, Workshop Summary Report for “Cyber AI Profile” Hybrid Workshop #1 | CSRC You are viewing this page in an unauthorized frame window. This is a potential security issue, you are being redirected to https://csrc.nist.gov . You have JavaScript disabled. This site requires JavaScript to be enabled for complete site functionality. An official website of the United States government Here’s how you know Here’s how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock Locked padlock icon ) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites. Search Search CSRC MENU Search Search Projects Publications Expand or Collapse Drafts for Public Comment All Public Drafts Final Pubs FIPS (standards) Special Publications (SP s ) IR (interagency/internal reports) CSWP (cybersecurity white papers) ITL Bulletins Project Descriptions Journal Articles Conference Papers Books Topics Expand or Collapse Security & Privacy Applications Technologies Sectors Laws & Regulations Activities & Products News & Updates Events Glossary About CSRC Expand or Collapse Computer Security Division Cryptographic Technology Software Security Group Hardware Security Group Security Engineering and Risk Management Applied Cybersecurity Division Cybersecurity and Privacy Applications National Cybersecurity Center of Excellence (NCCoE) National Initiative for Cybersecurity Education (NICE) Contact Us Information Technology Laboratory Computer Security Resource Center Publications NIST IR 8578 Workshop Summary Report for “Cyber AI Profile” Hybrid Workshop #1 Share to Facebook Share to X Share to LinkedIn Share ia Email Documentation Topics Date Published: August 2026 Author(s) Katerina Megas (NIST) , Bronwyn Patrick (MITRE) , Julie Snyder (MITRE) Abstract This report summarizes the discussion at the first &ldquo;Cyber AI Profile Workshop&rdquo; in April 2025 during which NIST sought feedback toward the development of a NIST Cybersecurity Framework Community Profile for AI. The Cyber AI Profile will provide guidelines for managing cybersecurity risks associated with AI systems and security capabilities. Discussions at the workshop focused on governance and operational challenges organizations face when adopting AI. It built on comments received in response to the February 2025 Cybersecurity and AI Workshop Concept Paper . This report summarizes the discussion at the first “Cyber AI Profile Workshop” in April 2025 during which NIST sought feedback toward the development of a NIST Cybersecurity Framework Community Profile for AI. The Cyber AI Profile will provide guidelines for managing cybersecurity risks associated... See full abstract This report summarizes the discussion at the first &ldquo;Cyber AI Profile Workshop&rdquo; in April 2025 during which NIST sought feedback toward the development of a NIST Cybersecurity Framework Community Profile for AI. The Cyber AI Profile will provide guidelines for managing cybersecurity risks associated with AI systems and security capabilities. Discussions at the workshop focused on governance and operational challenges organizations face when adopting AI. It built on comments received in response to the February 2025 Cybersecurity and AI Workshop Concept Paper . Hide full abstract Keywords Artificial Intelligence ; Community Profile ; Cyber AI Profile ; Cybersecurity Framework Control Families None selected Documentation Publication: https://doi.org/10.6028/NIST.IR.8578 Download URL Supplemental Material: Workshop #1 Cyber AI Profile project Related NIST Publications: IR 8596 (Draft) IR 8607 Document History: 08/03/26: IR 8578 (Final) Topics Security and Privacy general security &amp; privacy , planning Technologies machine learning Applications cybersecurity framework , enterprise Activities and Products conferences &amp; workshops HEADQUARTERS 100 Bureau Drive Gaithersburg, MD 20899 X (link is external) facebook (link is external) linkedin (link is external) instagram (link is external) youtube (link is external) rss govdelivery (link is external) Want updates about CSRC and our publications? Subscribe Contact Us | Our Other Offices Send inquiries to [email&#160;protected] Site Privacy Accessibility Privacy Program Copyrights Vulnerability Disclosure No Fear Act Policy FOIA Environmental Policy Scientific Integrity Information Quality Standards Commerce.gov Science.gov USA.gov Vote.gov",
+    "changeHistory": [
+      {
+        "date": "2026-08-03",
+        "description": "IR 8578 (Final)"
       }
     ]
   }
